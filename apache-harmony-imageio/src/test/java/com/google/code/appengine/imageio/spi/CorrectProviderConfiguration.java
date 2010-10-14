@@ -15,11 +15,11 @@
  *  limitations under the License.
  */
 
-package javax.imageio.spi;
+package com.google.code.appengine.imageio.spi;
 
 /*
  * Dummy class used by ServiceRegistryTest 
  */
-public class IncorrectProviderConfiguration {
+public class CorrectProviderConfiguration {
 
 }

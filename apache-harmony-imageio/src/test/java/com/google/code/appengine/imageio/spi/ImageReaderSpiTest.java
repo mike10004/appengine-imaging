@@ -15,7 +15,7 @@
  *  limitations under the License.
  */
 
-package javax.imageio.spi;
+package com.google.code.appengine.imageio.spi;
 
 import com.google.code.appengine.imageio.ImageIO;
 import com.google.code.appengine.imageio.ImageReader;

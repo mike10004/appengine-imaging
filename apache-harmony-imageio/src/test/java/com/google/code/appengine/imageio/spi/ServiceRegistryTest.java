@@ -15,7 +15,7 @@
  *  limitations under the License.
  */
 
-package javax.imageio.spi;
+package com.google.code.appengine.imageio.spi;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -200,7 +200,7 @@ public class ServiceRegistryTest extends TestCase {
     public void testDeregisterServiceProvider() throws Exception {
         Class[] CATEGORIES = new Class[] {
                 com.google.code.appengine.imageio.spi.ImageReaderSpi.class,
-                javax.imageio.spi.SampleImageReaderSpi.class};
+                com.google.code.appengine.imageio.spi.SampleImageReaderSpi.class};
 
         ServiceRegistry registry = new ServiceRegistry(Arrays.<Class<?>> asList(CATEGORIES).iterator());
 

@@ -15,7 +15,7 @@
  *  limitations under the License.
  */
 
-package javax.imageio;
+package com.google.code.appengine.imageio;
 
 import java.io.File;
 import java.net.URL;

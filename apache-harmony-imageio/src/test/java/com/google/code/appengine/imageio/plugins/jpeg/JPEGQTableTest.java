@@ -15,7 +15,7 @@
  *  limitations under the License.
  */
 
-package javax.imageio.plugins.jpeg;
+package com.google.code.appengine.imageio.plugins.jpeg;
 
 import com.google.code.appengine.imageio.plugins.jpeg.JPEGQTable;
 

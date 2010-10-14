@@ -15,7 +15,7 @@
  *  limitations under the License.
  */
 
-package javax.imageio;
+package com.google.code.appengine.imageio;
 
 import static org.junit.Assert.assertArrayEquals;
 

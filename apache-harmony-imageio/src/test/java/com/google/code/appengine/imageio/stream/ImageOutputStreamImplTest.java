@@ -15,16 +15,16 @@
  *  limitations under the License.
  */
 
-package javax.imageio.stream;
+package com.google.code.appengine.imageio.stream;
 
 import java.io.IOException;
 import java.nio.ByteOrder;
 import java.util.Arrays;
 
-import javax.imageio.stream.ImageInputStreamImplTest.BasicImageInputStreamImpl;
 
 import com.google.code.appengine.imageio.stream.ImageInputStream;
 import com.google.code.appengine.imageio.stream.ImageOutputStreamImpl;
+import com.google.code.appengine.imageio.stream.ImageInputStreamImplTest.BasicImageInputStreamImpl;
 
 import junit.framework.TestCase;
 

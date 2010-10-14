@@ -15,7 +15,7 @@
  *  limitations under the License.
  */
 
-package javax.imageio.stream;
+package com.google.code.appengine.imageio.stream;
 
 import java.io.IOException;
 import java.nio.ByteOrder;
