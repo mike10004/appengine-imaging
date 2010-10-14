@@ -16,13 +16,8 @@ import com.google.code.appengine.awt.GraphicsDevice;
 
 public class AppEngineWTK extends WTK
 {
-//    private final JavaSystemProperties systemProperties = new JavaSystemProperties();
     private final AppEngineEventQueue eventQueue = new AppEngineEventQueue();
     private final GraphicsFactory graphicsFactory = new AppEngineGraphics2DFactory();
-//    private final CursorFactory cursorFactory = new WinCursorFactory(eventQueue);
-//    private final NativeMouseInfo mouseInfo = new WinMouseInfo();
-//    private WinRobot robot;
-//    private WinIM im;
     
 	@Override
 	public CursorFactory getCursorFactory()

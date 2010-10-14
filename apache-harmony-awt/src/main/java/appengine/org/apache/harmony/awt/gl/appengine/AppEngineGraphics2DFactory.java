@@ -33,7 +33,7 @@ public class AppEngineGraphics2DFactory extends CommonGraphics2DFactory
 
 	public FontManager getFontManager()
 	{
-		return null;
+		return AppEngineFontManager.inst;
 	}
 
 	public Graphics2D getGraphics2D(NativeWindow win, int translateX,
