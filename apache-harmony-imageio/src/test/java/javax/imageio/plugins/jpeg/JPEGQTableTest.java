@@ -17,7 +17,8 @@
 
 package javax.imageio.plugins.jpeg;
 
-import nawt.javax.imageio.plugins.jpeg.JPEGQTable;
+import com.google.code.appengine.imageio.plugins.jpeg.JPEGQTable;
+
 import junit.framework.TestCase;
 
 public class JPEGQTableTest extends TestCase {

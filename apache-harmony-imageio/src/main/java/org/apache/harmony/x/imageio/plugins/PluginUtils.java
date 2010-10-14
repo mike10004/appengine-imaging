@@ -19,7 +19,8 @@ package org.apache.harmony.x.imageio.plugins;
 import java.io.IOException;
 import java.io.InputStream;
 
-import nawt.javax.imageio.stream.ImageInputStream;
+import com.google.code.appengine.imageio.stream.ImageInputStream;
+
 
 public class PluginUtils {
 

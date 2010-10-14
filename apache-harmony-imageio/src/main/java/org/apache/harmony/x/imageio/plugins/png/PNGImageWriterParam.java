@@ -19,7 +19,7 @@
  */
 package org.apache.harmony.x.imageio.plugins.png;
 
-import nawt.javax.imageio.ImageWriteParam;
+import com.google.code.appengine.imageio.ImageWriteParam;
 
 public class PNGImageWriterParam extends ImageWriteParam {
 

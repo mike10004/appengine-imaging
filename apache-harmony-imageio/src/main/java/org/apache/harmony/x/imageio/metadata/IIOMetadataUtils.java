@@ -22,10 +22,11 @@ import java.lang.reflect.Method;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
 
-import nawt.javax.imageio.metadata.IIOMetadataFormat;
-import nawt.javax.imageio.metadata.IIOMetadataFormatImpl;
 
 import org.apache.harmony.x.imageio.internal.nls.Messages;
+
+import com.google.code.appengine.imageio.metadata.IIOMetadataFormat;
+import com.google.code.appengine.imageio.metadata.IIOMetadataFormatImpl;
 
 public class IIOMetadataUtils {
     private IIOMetadataUtils() {} 

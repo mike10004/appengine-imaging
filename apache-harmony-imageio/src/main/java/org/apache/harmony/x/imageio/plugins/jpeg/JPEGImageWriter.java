@@ -25,14 +25,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-import nawt.javax.imageio.IIOImage;
-import nawt.javax.imageio.ImageTypeSpecifier;
-import nawt.javax.imageio.ImageWriteParam;
-import nawt.javax.imageio.ImageWriter;
-import nawt.javax.imageio.metadata.IIOMetadata;
-import nawt.javax.imageio.plugins.jpeg.JPEGImageWriteParam;
-import nawt.javax.imageio.spi.ImageWriterSpi;
-import nawt.javax.imageio.stream.ImageOutputStream;
 
 import org.apache.harmony.luni.util.NotImplementedException;
 import org.apache.harmony.x.imageio.internal.nls.Messages;
@@ -47,6 +39,14 @@ import com.google.code.appengine.awt.image.IndexColorModel;
 import com.google.code.appengine.awt.image.Raster;
 import com.google.code.appengine.awt.image.RenderedImage;
 import com.google.code.appengine.awt.image.WritableRaster;
+import com.google.code.appengine.imageio.IIOImage;
+import com.google.code.appengine.imageio.ImageTypeSpecifier;
+import com.google.code.appengine.imageio.ImageWriteParam;
+import com.google.code.appengine.imageio.ImageWriter;
+import com.google.code.appengine.imageio.metadata.IIOMetadata;
+import com.google.code.appengine.imageio.plugins.jpeg.JPEGImageWriteParam;
+import com.google.code.appengine.imageio.spi.ImageWriterSpi;
+import com.google.code.appengine.imageio.stream.ImageOutputStream;
 
 
 /**

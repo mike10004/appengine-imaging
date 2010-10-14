@@ -25,12 +25,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-import nawt.javax.imageio.IIOImage;
-import nawt.javax.imageio.ImageTypeSpecifier;
-import nawt.javax.imageio.ImageWriteParam;
-import nawt.javax.imageio.ImageWriter;
-import nawt.javax.imageio.metadata.IIOMetadata;
-import nawt.javax.imageio.spi.ImageWriterSpi;
 
 import org.apache.harmony.luni.util.NotImplementedException;
 import org.apache.harmony.x.imageio.internal.nls.Messages;
@@ -40,6 +34,12 @@ import org.apache.sanselan.Sanselan;
 
 import com.google.code.appengine.awt.image.BufferedImage;
 import com.google.code.appengine.awt.image.RenderedImage;
+import com.google.code.appengine.imageio.IIOImage;
+import com.google.code.appengine.imageio.ImageTypeSpecifier;
+import com.google.code.appengine.imageio.ImageWriteParam;
+import com.google.code.appengine.imageio.ImageWriter;
+import com.google.code.appengine.imageio.metadata.IIOMetadata;
+import com.google.code.appengine.imageio.spi.ImageWriterSpi;
 
 
 public class PNGImageWriter extends ImageWriter {

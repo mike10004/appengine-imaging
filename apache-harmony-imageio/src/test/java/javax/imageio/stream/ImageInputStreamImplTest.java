@@ -20,8 +20,9 @@ package javax.imageio.stream;
 import java.io.IOException;
 import java.nio.ByteOrder;
 
-import nawt.javax.imageio.stream.ImageInputStream;
-import nawt.javax.imageio.stream.ImageInputStreamImpl;
+import com.google.code.appengine.imageio.stream.ImageInputStream;
+import com.google.code.appengine.imageio.stream.ImageInputStreamImpl;
+
 
 import junit.framework.TestCase;
 

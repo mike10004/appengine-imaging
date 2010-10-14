@@ -21,14 +21,15 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Locale;
 
+import com.google.code.appengine.imageio.ImageReader;
+import com.google.code.appengine.imageio.ImageTypeSpecifier;
+import com.google.code.appengine.imageio.ImageWriter;
+import com.google.code.appengine.imageio.spi.ImageReaderSpi;
+import com.google.code.appengine.imageio.spi.ImageWriterSpi;
+import com.google.code.appengine.imageio.spi.ServiceRegistry;
+
 import junit.framework.TestCase;
 
-import nawt.javax.imageio.ImageReader;
-import nawt.javax.imageio.ImageTypeSpecifier;
-import nawt.javax.imageio.ImageWriter;
-import nawt.javax.imageio.spi.ImageReaderSpi;
-import nawt.javax.imageio.spi.ImageWriterSpi;
-import nawt.javax.imageio.spi.ServiceRegistry;
 
 public class ServiceRegistryTest extends TestCase {
 
@@ -198,7 +199,7 @@ public class ServiceRegistryTest extends TestCase {
     @SuppressWarnings("unchecked")
     public void testDeregisterServiceProvider() throws Exception {
         Class[] CATEGORIES = new Class[] {
-                nawt.javax.imageio.spi.ImageReaderSpi.class,
+                com.google.code.appengine.imageio.spi.ImageReaderSpi.class,
                 javax.imageio.spi.SampleImageReaderSpi.class};
 
         ServiceRegistry registry = new ServiceRegistry(Arrays.<Class<?>> asList(CATEGORIES).iterator());

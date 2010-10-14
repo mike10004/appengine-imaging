@@ -20,9 +20,10 @@ import java.io.IOException;
 import java.util.Arrays;
 
 
-import nawt.javax.imageio.stream.ImageInputStream;
 
 import org.apache.harmony.x.imageio.internal.nls.Messages;
+
+import com.google.code.appengine.imageio.stream.ImageInputStream;
 
 public enum ImageSignature {
         JPEG(new byte[] { (byte) 0xFF, (byte) 0xD8, (byte) 0xFF }),

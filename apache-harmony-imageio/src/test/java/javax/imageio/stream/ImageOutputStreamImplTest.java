@@ -23,9 +23,10 @@ import java.util.Arrays;
 
 import javax.imageio.stream.ImageInputStreamImplTest.BasicImageInputStreamImpl;
 
+import com.google.code.appengine.imageio.stream.ImageInputStream;
+import com.google.code.appengine.imageio.stream.ImageOutputStreamImpl;
+
 import junit.framework.TestCase;
-import nawt.javax.imageio.stream.ImageInputStream;
-import nawt.javax.imageio.stream.ImageOutputStreamImpl;
 
 public class ImageOutputStreamImplTest extends TestCase {
 

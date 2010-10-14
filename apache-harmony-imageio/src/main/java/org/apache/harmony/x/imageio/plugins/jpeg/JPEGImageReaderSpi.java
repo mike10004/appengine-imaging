@@ -23,12 +23,13 @@ import java.io.IOException;
 import java.util.Locale;
 
 
-import nawt.javax.imageio.ImageReader;
-import nawt.javax.imageio.spi.ImageReaderSpi;
 
 import org.apache.harmony.x.imageio.plugins.ImageSignature;
 import org.apache.harmony.x.imageio.plugins.ImageType;
 import org.apache.harmony.x.imageio.plugins.PluginUtils;
+
+import com.google.code.appengine.imageio.ImageReader;
+import com.google.code.appengine.imageio.spi.ImageReaderSpi;
 
 public class JPEGImageReaderSpi extends ImageReaderSpi {
 

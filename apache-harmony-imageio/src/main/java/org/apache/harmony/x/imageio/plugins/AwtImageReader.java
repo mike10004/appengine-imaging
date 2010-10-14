@@ -22,12 +22,6 @@ import java.util.Arrays;
 import java.util.Iterator;
 
 
-import nawt.javax.imageio.ImageReadParam;
-import nawt.javax.imageio.ImageReader;
-import nawt.javax.imageio.ImageTypeSpecifier;
-import nawt.javax.imageio.metadata.IIOMetadata;
-import nawt.javax.imageio.spi.ImageReaderSpi;
-import nawt.javax.imageio.stream.ImageInputStream;
 
 import org.apache.harmony.awt.gl.image.DecodingImageSource;
 import org.apache.harmony.awt.gl.image.OffscreenImage;
@@ -37,6 +31,12 @@ import com.google.code.appengine.awt.Image;
 import com.google.code.appengine.awt.image.BufferedImage;
 import com.google.code.appengine.awt.image.ColorModel;
 import com.google.code.appengine.awt.image.ImageObserver;
+import com.google.code.appengine.imageio.ImageReadParam;
+import com.google.code.appengine.imageio.ImageReader;
+import com.google.code.appengine.imageio.ImageTypeSpecifier;
+import com.google.code.appengine.imageio.metadata.IIOMetadata;
+import com.google.code.appengine.imageio.spi.ImageReaderSpi;
+import com.google.code.appengine.imageio.stream.ImageInputStream;
 
 
 /**

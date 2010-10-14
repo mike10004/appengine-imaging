@@ -27,9 +27,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import nawt.javax.imageio.ImageIO;
-import nawt.javax.imageio.ImageReader;
-import nawt.javax.imageio.ImageWriter;
+import com.google.code.appengine.imageio.ImageIO;
+import com.google.code.appengine.imageio.ImageReader;
+import com.google.code.appengine.imageio.ImageWriter;
+
 
 import junit.framework.TestCase;
 

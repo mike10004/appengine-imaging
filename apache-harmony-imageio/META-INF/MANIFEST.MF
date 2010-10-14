@@ -18,5 +18,5 @@ Import-Package: com.google.code.appengine.awt,
  org.apache.harmony.awt.gl.image,
  org.apache.harmony.luni.util,
  org.w3c.dom
-Export-Package: nawt.javax.imageio
+Export-Package: com.google.code.appengine.imageio
 Require-Bundle: org.apache.harmony.awt

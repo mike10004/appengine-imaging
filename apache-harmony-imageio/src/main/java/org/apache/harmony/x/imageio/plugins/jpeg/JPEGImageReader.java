@@ -17,11 +17,12 @@
 package org.apache.harmony.x.imageio.plugins.jpeg;
 
 
-import nawt.javax.imageio.ImageReadParam;
-import nawt.javax.imageio.plugins.jpeg.JPEGImageReadParam;
-import nawt.javax.imageio.spi.ImageReaderSpi;
 
 import org.apache.harmony.x.imageio.plugins.AwtImageReader;
+
+import com.google.code.appengine.imageio.ImageReadParam;
+import com.google.code.appengine.imageio.plugins.jpeg.JPEGImageReadParam;
+import com.google.code.appengine.imageio.spi.ImageReaderSpi;
 
 public class JPEGImageReader extends AwtImageReader {
 

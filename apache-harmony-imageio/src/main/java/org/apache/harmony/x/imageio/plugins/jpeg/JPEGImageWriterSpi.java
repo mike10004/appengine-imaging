@@ -23,12 +23,13 @@ import java.io.IOException;
 import java.util.Locale;
 
 
-import nawt.javax.imageio.ImageTypeSpecifier;
-import nawt.javax.imageio.ImageWriter;
-import nawt.javax.imageio.spi.ImageWriterSpi;
 
 import org.apache.harmony.x.imageio.plugins.ImageType;
 import org.apache.harmony.x.imageio.plugins.PluginUtils;
+
+import com.google.code.appengine.imageio.ImageTypeSpecifier;
+import com.google.code.appengine.imageio.ImageWriter;
+import com.google.code.appengine.imageio.spi.ImageWriterSpi;
 
 public class JPEGImageWriterSpi extends ImageWriterSpi {
 

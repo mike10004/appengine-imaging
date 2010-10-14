@@ -26,9 +26,9 @@ import com.google.code.appengine.awt.image.BufferedImage;
 import com.google.code.appengine.awt.image.ColorModel;
 import com.google.code.appengine.awt.image.DataBuffer;
 import com.google.code.appengine.awt.image.PixelInterleavedSampleModel;
+import com.google.code.appengine.imageio.ImageTypeSpecifier;
 
 
-import nawt.javax.imageio.ImageTypeSpecifier;
 
 import junit.framework.TestCase;
 

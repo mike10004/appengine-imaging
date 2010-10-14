@@ -17,9 +17,9 @@
 
 package javax.imageio.spi;
 
-import nawt.javax.imageio.ImageIO;
-import nawt.javax.imageio.ImageReader;
-import nawt.javax.imageio.spi.ImageReaderSpi;
+import com.google.code.appengine.imageio.ImageIO;
+import com.google.code.appengine.imageio.ImageReader;
+import com.google.code.appengine.imageio.spi.ImageReaderSpi;
 
 import junit.framework.TestCase;
 

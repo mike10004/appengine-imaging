@@ -23,12 +23,13 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Locale;
 
-import nawt.javax.imageio.spi.ImageOutputStreamSpi;
-import nawt.javax.imageio.stream.FileCacheImageOutputStream;
-import nawt.javax.imageio.stream.ImageOutputStream;
-import nawt.javax.imageio.stream.MemoryCacheImageOutputStream;
 
 import org.apache.harmony.x.imageio.internal.nls.Messages;
+
+import com.google.code.appengine.imageio.spi.ImageOutputStreamSpi;
+import com.google.code.appengine.imageio.stream.FileCacheImageOutputStream;
+import com.google.code.appengine.imageio.stream.ImageOutputStream;
+import com.google.code.appengine.imageio.stream.MemoryCacheImageOutputStream;
 
 public class OutputStreamIOSSpi extends ImageOutputStreamSpi {
     private static final String vendor = "Apache";

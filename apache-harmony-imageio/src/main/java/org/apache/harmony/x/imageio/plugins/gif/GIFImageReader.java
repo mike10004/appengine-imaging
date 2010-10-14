@@ -17,9 +17,10 @@
 package org.apache.harmony.x.imageio.plugins.gif;
 
 
-import nawt.javax.imageio.spi.ImageReaderSpi;
 
 import org.apache.harmony.x.imageio.plugins.AwtImageReader;
+
+import com.google.code.appengine.imageio.spi.ImageReaderSpi;
 
 public class GIFImageReader extends AwtImageReader {
 
