@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Specification-Title: Java Platform API Specification
+Specification-Version: 1.5
+Implementation-Title: Apache Harmony
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.harmony
+Implementation-URL: http://harmony.apache.org
+Bundle-ManifestVersion: 2
+Bundle-Name: Harmony ImageIO
+Bundle-SymbolicName: org.apache.harmony.imageio
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .
+Eclipse-JREBundle: true
+Import-Package: org.apache.harmony.awt.gl.image,
+ org.apache.harmony.luni.util,
+ org.w3c.dom,
+ purejava.awt,
+ purejava.awt.color,
+ purejava.awt.geom,
+ purejava.awt.image
+Export-Package: nawt.javax.imageio
+Require-Bundle: org.apache.harmony.awt
