@@ -1,4 +1,4 @@
-package org.apache.harmony.awt.wtk.java;
+package org.apache.harmony.awt.wtk.appengine;
 
 import org.apache.harmony.awt.wtk.NativeEventQueue;
 

@@ -1,4 +1,4 @@
-package org.apache.harmony.awt.gl.java;
+package org.apache.harmony.awt.gl.appengine;
 
 import org.apache.harmony.awt.gl.CommonGraphicsEnvironment;
 

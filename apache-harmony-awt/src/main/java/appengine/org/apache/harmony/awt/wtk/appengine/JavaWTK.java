@@ -1,6 +1,6 @@
-package org.apache.harmony.awt.wtk.java;
+package org.apache.harmony.awt.wtk.appengine;
 
-import org.apache.harmony.awt.gl.java.JavaGraphics2DFactory;
+import org.apache.harmony.awt.gl.appengine.JavaGraphics2DFactory;
 import org.apache.harmony.awt.wtk.CursorFactory;
 import org.apache.harmony.awt.wtk.GraphicsFactory;
 import org.apache.harmony.awt.wtk.NativeEventQueue;

@@ -128,7 +128,7 @@ public abstract class DTK {
             DragGestureEvent dge);
     
     private static DTK createDTK() {
-        String name = "org.apache.harmony.awt.datatransfer.java.JavaDTK";
+        String name = "org.apache.harmony.awt.datatransfer.appengine.AppEngineDTK";
         // XXX
 //        switch (SystemUtils.getOS()) {
 //        case SystemUtils.OS_WINDOWS:

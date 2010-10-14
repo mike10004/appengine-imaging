@@ -1,4 +1,4 @@
-package org.apache.harmony.awt.datatransfer.java;
+package org.apache.harmony.awt.datatransfer.appengine;
 
 import org.apache.harmony.awt.datatransfer.DTK;
 import org.apache.harmony.awt.datatransfer.NativeClipboard;

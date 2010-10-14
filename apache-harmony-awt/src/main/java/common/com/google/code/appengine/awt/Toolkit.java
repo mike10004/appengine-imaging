@@ -537,7 +537,7 @@ public abstract class Toolkit {
     }
 
     private static String getWTKClassName() {
-        return "org.apache.harmony.awt.wtk.java.JavaWTK";
+        return "org.apache.harmony.awt.wtk.appengine.AppEngineWTK";
     }
 
     Component getComponentById(long id) {
