@@ -25,7 +25,8 @@ import nawt.javax.imageio.IIOParam;
 
 import org.apache.harmony.x.imageio.internal.nls.Messages;
 
-import purejava.awt.*;
+import com.google.code.appengine.awt.*;
+
 
 public class ImageWriteParam extends IIOParam {
 

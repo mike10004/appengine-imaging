@@ -39,10 +39,11 @@ import nawt.javax.imageio.stream.ImageInputStream;
 
 import org.apache.harmony.x.imageio.internal.nls.Messages;
 
-import purejava.awt.Rectangle;
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.Raster;
-import purejava.awt.image.RenderedImage;
+import com.google.code.appengine.awt.Rectangle;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.Raster;
+import com.google.code.appengine.awt.image.RenderedImage;
+
 
 public abstract class ImageReader {
 

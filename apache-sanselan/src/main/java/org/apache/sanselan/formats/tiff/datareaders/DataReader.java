@@ -28,7 +28,8 @@ import org.apache.sanselan.common.mylzw.MyLZWDecompressor;
 import org.apache.sanselan.formats.tiff.constants.TiffConstants;
 import org.apache.sanselan.formats.tiff.photometricinterpreters.PhotometricInterpreter;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public abstract class DataReader implements TiffConstants, BinaryConstants
 {

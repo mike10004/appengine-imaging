@@ -36,9 +36,10 @@ import org.apache.sanselan.icc.IccProfileInfo;
 import org.apache.sanselan.icc.IccProfileParser;
 import org.apache.sanselan.util.Debug;
 
-import purejava.awt.Dimension;
-import purejava.awt.color.ICC_Profile;
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.Dimension;
+import com.google.code.appengine.awt.color.ICC_Profile;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 /**
  * The primary interface to the sanselan library.

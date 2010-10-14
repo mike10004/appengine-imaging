@@ -22,7 +22,8 @@ import java.util.Map;
 
 import org.apache.sanselan.ImageWriteException;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public class PBMWriter extends PNMWriter implements PNMConstants
 {

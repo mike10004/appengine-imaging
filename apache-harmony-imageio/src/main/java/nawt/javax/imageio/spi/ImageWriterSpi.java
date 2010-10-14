@@ -29,7 +29,8 @@ import nawt.javax.imageio.stream.ImageInputStream;
 
 import org.apache.harmony.x.imageio.internal.nls.Messages;
 
-import purejava.awt.image.RenderedImage;
+import com.google.code.appengine.awt.image.RenderedImage;
+
 
 public abstract class ImageWriterSpi extends ImageReaderWriterSpi {
 

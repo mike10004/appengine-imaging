@@ -36,8 +36,9 @@ import org.apache.sanselan.common.byteSources.ByteSource;
 import org.apache.sanselan.util.Debug;
 import org.apache.sanselan.util.ParamMap;
 
-import purejava.awt.Dimension;
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.Dimension;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public class IcnsImageParser extends ImageParser
 {

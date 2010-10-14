@@ -27,7 +27,8 @@ import org.apache.sanselan.common.byteSources.ByteSourceFile;
 import org.apache.sanselan.util.CachingInputStream;
 import org.apache.sanselan.util.Debug;
 
-import purejava.awt.color.ICC_Profile;
+import com.google.code.appengine.awt.color.ICC_Profile;
+
 
 public class IccProfileParser extends BinaryFileParser implements IccConstants
 {

@@ -56,12 +56,13 @@ import org.apache.sanselan.icc.IccProfileParser;
 import org.apache.sanselan.util.Debug;
 import org.apache.sanselan.util.ParamMap;
 
-import purejava.awt.Dimension;
-import purejava.awt.color.ColorSpace;
-import purejava.awt.color.ICC_ColorSpace;
-import purejava.awt.color.ICC_Profile;
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.ColorModel;
+import com.google.code.appengine.awt.Dimension;
+import com.google.code.appengine.awt.color.ColorSpace;
+import com.google.code.appengine.awt.color.ICC_ColorSpace;
+import com.google.code.appengine.awt.color.ICC_Profile;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.ColorModel;
+
 
 public class PngImageParser extends ImageParser implements PngConstants
 {

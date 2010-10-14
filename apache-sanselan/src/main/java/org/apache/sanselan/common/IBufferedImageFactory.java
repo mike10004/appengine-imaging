@@ -17,7 +17,7 @@
 
 package org.apache.sanselan.common;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
 
 public interface IBufferedImageFactory
 {

@@ -33,10 +33,11 @@ import org.apache.harmony.awt.gl.image.DecodingImageSource;
 import org.apache.harmony.awt.gl.image.OffscreenImage;
 import org.apache.harmony.x.imageio.internal.nls.Messages;
 
-import purejava.awt.Image;
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.ColorModel;
-import purejava.awt.image.ImageObserver;
+import com.google.code.appengine.awt.Image;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.ColorModel;
+import com.google.code.appengine.awt.image.ImageObserver;
+
 
 /**
  * This implementation is based on the image loader from the AWT module. It

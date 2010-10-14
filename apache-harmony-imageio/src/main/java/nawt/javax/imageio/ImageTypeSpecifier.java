@@ -23,21 +23,22 @@ import nawt.javax.imageio.ImageTypeSpecifier;
 
 import org.apache.harmony.x.imageio.internal.nls.Messages;
 
-import purejava.awt.Point;
-import purejava.awt.Transparency;
-import purejava.awt.color.ColorSpace;
-import purejava.awt.image.BandedSampleModel;
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.ColorModel;
-import purejava.awt.image.ComponentColorModel;
-import purejava.awt.image.DataBuffer;
-import purejava.awt.image.DirectColorModel;
-import purejava.awt.image.IndexColorModel;
-import purejava.awt.image.PixelInterleavedSampleModel;
-import purejava.awt.image.Raster;
-import purejava.awt.image.RenderedImage;
-import purejava.awt.image.SampleModel;
-import purejava.awt.image.WritableRaster;
+import com.google.code.appengine.awt.Point;
+import com.google.code.appengine.awt.Transparency;
+import com.google.code.appengine.awt.color.ColorSpace;
+import com.google.code.appengine.awt.image.BandedSampleModel;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.ColorModel;
+import com.google.code.appengine.awt.image.ComponentColorModel;
+import com.google.code.appengine.awt.image.DataBuffer;
+import com.google.code.appengine.awt.image.DirectColorModel;
+import com.google.code.appengine.awt.image.IndexColorModel;
+import com.google.code.appengine.awt.image.PixelInterleavedSampleModel;
+import com.google.code.appengine.awt.image.Raster;
+import com.google.code.appengine.awt.image.RenderedImage;
+import com.google.code.appengine.awt.image.SampleModel;
+import com.google.code.appengine.awt.image.WritableRaster;
+
 
 public class ImageTypeSpecifier {
     

@@ -42,8 +42,9 @@ import org.apache.sanselan.formats.psd.PsdImageParser;
 import org.apache.sanselan.formats.tiff.TiffImageParser;
 import org.apache.sanselan.util.Debug;
 
-import purejava.awt.Dimension;
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.Dimension;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public abstract class ImageParser extends BinaryFileParser implements
         SanselanConstants

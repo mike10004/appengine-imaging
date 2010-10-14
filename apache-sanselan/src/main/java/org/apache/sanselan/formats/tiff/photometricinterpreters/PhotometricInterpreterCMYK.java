@@ -21,7 +21,8 @@ import java.io.IOException;
 import org.apache.sanselan.ImageReadException;
 import org.apache.sanselan.color.ColorConversions;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public class PhotometricInterpreterCMYK extends PhotometricInterpreter
 {

@@ -32,7 +32,8 @@ import org.apache.sanselan.formats.tiff.write.TiffOutputDirectory;
 import org.apache.sanselan.formats.tiff.write.TiffOutputField;
 import org.apache.sanselan.formats.tiff.write.TiffOutputSet;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public class TiffImageMetadata extends ImageMetadata
         implements

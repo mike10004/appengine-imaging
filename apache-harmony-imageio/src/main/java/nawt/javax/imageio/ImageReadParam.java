@@ -25,8 +25,9 @@ import nawt.javax.imageio.ImageTypeSpecifier;
 
 import org.apache.harmony.x.imageio.internal.nls.Messages;
 
-import purejava.awt.Dimension;
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.Dimension;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 /**
  * @author Sergey I. Salishev

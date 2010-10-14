@@ -44,8 +44,9 @@ import org.apache.sanselan.formats.psd.datareaders.DataReader;
 import org.apache.sanselan.formats.psd.datareaders.UncompressedDataReader;
 import org.apache.sanselan.util.Debug;
 
-import purejava.awt.Dimension;
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.Dimension;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public class PsdImageParser extends ImageParser
 {

@@ -28,8 +28,9 @@ import org.apache.sanselan.formats.tiff.TiffImageMetadata;
 import org.apache.sanselan.formats.tiff.constants.TagInfo;
 import org.apache.sanselan.util.Debug;
 
-import purejava.awt.Dimension;
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.Dimension;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public class JpegImageMetadata implements IImageMetadata {
     private final JpegPhotoshopMetadata photoshop;

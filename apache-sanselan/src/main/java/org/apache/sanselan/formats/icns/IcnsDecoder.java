@@ -21,7 +21,8 @@ import java.util.ArrayList;
 
 import org.apache.sanselan.ImageReadException;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public class IcnsDecoder
 {

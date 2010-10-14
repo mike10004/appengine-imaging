@@ -46,8 +46,9 @@ import java.util.List;
 import java.net.URL;
 import org.apache.harmony.x.imageio.internal.nls.Messages;
 
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.RenderedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.RenderedImage;
+
 
 public final class ImageIO {
 

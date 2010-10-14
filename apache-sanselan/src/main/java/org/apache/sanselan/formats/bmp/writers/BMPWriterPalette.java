@@ -22,7 +22,8 @@ import java.io.IOException;
 import org.apache.sanselan.common.BinaryOutputStream;
 import org.apache.sanselan.palette.SimplePalette;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public class BMPWriterPalette extends BMPWriter
 {

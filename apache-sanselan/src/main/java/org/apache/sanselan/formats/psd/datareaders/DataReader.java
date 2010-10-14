@@ -25,7 +25,8 @@ import org.apache.sanselan.common.BinaryFileParser;
 import org.apache.sanselan.formats.psd.ImageContents;
 import org.apache.sanselan.formats.psd.dataparsers.DataParser;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public abstract class DataReader implements BinaryConstants
 {

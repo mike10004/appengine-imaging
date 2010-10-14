@@ -23,7 +23,8 @@ import org.apache.sanselan.ImageReadException;
 import org.apache.sanselan.formats.png.chunks.PNGChunkPLTE;
 import org.apache.sanselan.formats.transparencyfilters.TransparencyFilter;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public class ScanExpediterInterlaced extends ScanExpediter
 {

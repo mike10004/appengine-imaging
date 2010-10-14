@@ -20,7 +20,8 @@ import java.io.IOException;
 
 import org.apache.sanselan.ImageReadException;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public class PhotometricInterpreterYCbCr extends PhotometricInterpreter
 {

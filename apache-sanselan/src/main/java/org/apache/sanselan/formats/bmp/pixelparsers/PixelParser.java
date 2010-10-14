@@ -23,7 +23,8 @@ import org.apache.sanselan.ImageReadException;
 import org.apache.sanselan.common.BinaryFileParser;
 import org.apache.sanselan.formats.bmp.BmpHeaderInfo;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public abstract class PixelParser
 {

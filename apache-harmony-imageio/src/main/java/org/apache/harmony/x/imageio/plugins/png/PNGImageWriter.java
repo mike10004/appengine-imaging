@@ -38,8 +38,9 @@ import org.apache.sanselan.ImageFormat;
 import org.apache.sanselan.ImageWriteException;
 import org.apache.sanselan.Sanselan;
 
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.RenderedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.RenderedImage;
+
 
 public class PNGImageWriter extends ImageWriter {
     private static int[][] BAND_OFFSETS = {

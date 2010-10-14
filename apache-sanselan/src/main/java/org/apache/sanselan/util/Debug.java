@@ -25,10 +25,11 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Map;
 
-import purejava.awt.Dimension;
-import purejava.awt.Point;
-import purejava.awt.Rectangle;
-import purejava.awt.color.ICC_Profile;
+import com.google.code.appengine.awt.Dimension;
+import com.google.code.appengine.awt.Point;
+import com.google.code.appengine.awt.Rectangle;
+import com.google.code.appengine.awt.color.ICC_Profile;
+
 
 public final class Debug
 {

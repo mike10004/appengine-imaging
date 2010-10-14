@@ -30,8 +30,9 @@ import nawt.javax.imageio.spi.ImageWriterSpi;
 import org.apache.harmony.x.imageio.plugins.ImageType;
 import org.apache.harmony.x.imageio.plugins.PluginUtils;
 
-import purejava.awt.image.ColorModel;
-import purejava.awt.image.IndexColorModel;
+import com.google.code.appengine.awt.image.ColorModel;
+import com.google.code.appengine.awt.image.IndexColorModel;
+
 
 public class PNGImageWriterSpi extends ImageWriterSpi {
 

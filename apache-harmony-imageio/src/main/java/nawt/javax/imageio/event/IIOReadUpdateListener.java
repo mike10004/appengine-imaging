@@ -21,7 +21,8 @@ package nawt.javax.imageio.event;
 
 import java.util.EventListener;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 import nawt.javax.imageio.ImageReader;
 

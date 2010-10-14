@@ -40,13 +40,14 @@ import org.apache.sanselan.ImageFormat;
 import org.apache.sanselan.ImageWriteException;
 import org.apache.sanselan.Sanselan;
 
-import purejava.awt.color.ColorSpace;
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.ColorModel;
-import purejava.awt.image.IndexColorModel;
-import purejava.awt.image.Raster;
-import purejava.awt.image.RenderedImage;
-import purejava.awt.image.WritableRaster;
+import com.google.code.appengine.awt.color.ColorSpace;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.ColorModel;
+import com.google.code.appengine.awt.image.IndexColorModel;
+import com.google.code.appengine.awt.image.Raster;
+import com.google.code.appengine.awt.image.RenderedImage;
+import com.google.code.appengine.awt.image.WritableRaster;
+
 
 /**
  * @author Rustem V. Rafikov

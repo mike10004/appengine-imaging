@@ -21,8 +21,9 @@ import java.io.IOException;
 import org.apache.sanselan.ImageReadException;
 import org.apache.sanselan.formats.bmp.BmpHeaderInfo;
 
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.DataBuffer;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.DataBuffer;
+
 
 public class PixelParserRle extends PixelParser
 {

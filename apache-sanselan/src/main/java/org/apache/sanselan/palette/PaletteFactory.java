@@ -22,9 +22,10 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import purejava.awt.color.ColorSpace;
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.ColorModel;
+import com.google.code.appengine.awt.color.ColorSpace;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.ColorModel;
+
 
 public class PaletteFactory
 {

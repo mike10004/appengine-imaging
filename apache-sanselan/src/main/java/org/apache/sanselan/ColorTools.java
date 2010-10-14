@@ -20,16 +20,17 @@ package org.apache.sanselan;
 import java.io.File;
 import java.io.IOException;
 
-import purejava.awt.RenderingHints;
-import purejava.awt.color.ColorSpace;
-import purejava.awt.color.ICC_ColorSpace;
-import purejava.awt.color.ICC_Profile;
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.ColorConvertOp;
-import purejava.awt.image.ColorModel;
-import purejava.awt.image.ComponentColorModel;
-import purejava.awt.image.DirectColorModel;
-import purejava.awt.image.ImagingOpException;
+import com.google.code.appengine.awt.RenderingHints;
+import com.google.code.appengine.awt.color.ColorSpace;
+import com.google.code.appengine.awt.color.ICC_ColorSpace;
+import com.google.code.appengine.awt.color.ICC_Profile;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.ColorConvertOp;
+import com.google.code.appengine.awt.image.ColorModel;
+import com.google.code.appengine.awt.image.ComponentColorModel;
+import com.google.code.appengine.awt.image.DirectColorModel;
+import com.google.code.appengine.awt.image.ImagingOpException;
+
 
 /**
  * This class is a mess and needs to be cleaned up.

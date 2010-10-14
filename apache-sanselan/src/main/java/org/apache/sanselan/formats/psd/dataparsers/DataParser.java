@@ -20,8 +20,9 @@ package org.apache.sanselan.formats.psd.dataparsers;
 import org.apache.sanselan.formats.psd.ImageContents;
 import org.apache.sanselan.formats.psd.PSDHeaderInfo;
 
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.DataBuffer;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.DataBuffer;
+
 
 public abstract class DataParser
 {

@@ -45,8 +45,9 @@ import org.apache.sanselan.formats.tiff.photometricinterpreters.PhotometricInter
 import org.apache.sanselan.formats.tiff.photometricinterpreters.PhotometricInterpreterYCbCr;
 import org.apache.sanselan.formats.tiff.write.TiffImageWriterLossy;
 
-import purejava.awt.Dimension;
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.Dimension;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public class TiffImageParser extends ImageParser implements TiffConstants
 {

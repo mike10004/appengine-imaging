@@ -24,7 +24,8 @@ import org.apache.sanselan.common.BitInputStream;
 import org.apache.sanselan.formats.tiff.TiffImageData;
 import org.apache.sanselan.formats.tiff.photometricinterpreters.PhotometricInterpreter;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public final class DataReaderStrips extends DataReader
 {

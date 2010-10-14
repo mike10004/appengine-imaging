@@ -34,7 +34,8 @@ import org.apache.sanselan.formats.tiff.TiffElement;
 import org.apache.sanselan.formats.tiff.TiffImageData;
 import org.apache.sanselan.formats.tiff.constants.TiffConstants;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public abstract class TiffImageWriterBase implements TiffConstants,
         BinaryConstants

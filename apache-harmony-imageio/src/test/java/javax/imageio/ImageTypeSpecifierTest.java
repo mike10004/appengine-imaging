@@ -19,13 +19,14 @@ package javax.imageio;
 
 import static org.junit.Assert.assertArrayEquals;
 
-import purejava.awt.Transparency;
-import purejava.awt.color.ColorSpace;
-import purejava.awt.image.BandedSampleModel;
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.ColorModel;
-import purejava.awt.image.DataBuffer;
-import purejava.awt.image.PixelInterleavedSampleModel;
+import com.google.code.appengine.awt.Transparency;
+import com.google.code.appengine.awt.color.ColorSpace;
+import com.google.code.appengine.awt.image.BandedSampleModel;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.ColorModel;
+import com.google.code.appengine.awt.image.DataBuffer;
+import com.google.code.appengine.awt.image.PixelInterleavedSampleModel;
+
 
 import nawt.javax.imageio.ImageTypeSpecifier;
 

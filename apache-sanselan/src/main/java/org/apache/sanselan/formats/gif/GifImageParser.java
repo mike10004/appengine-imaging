@@ -44,9 +44,10 @@ import org.apache.sanselan.palette.PaletteFactory;
 import org.apache.sanselan.util.Debug;
 import org.apache.sanselan.util.ParamMap;
 
-import purejava.awt.Dimension;
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.DataBuffer;
+import com.google.code.appengine.awt.Dimension;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.DataBuffer;
+
 
 public class GifImageParser extends ImageParser
 {

@@ -33,7 +33,8 @@ import org.apache.sanselan.util.Debug;
 import org.apache.sanselan.util.ParamMap;
 import org.apache.sanselan.util.UnicodeUtils;
 
-import purejava.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.BufferedImage;
+
 
 public class PngWriter implements PngConstants
 {

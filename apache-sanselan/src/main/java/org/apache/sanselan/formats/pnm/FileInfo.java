@@ -21,8 +21,9 @@ import java.io.InputStream;
 
 import org.apache.sanselan.ImageFormat;
 
-import purejava.awt.image.BufferedImage;
-import purejava.awt.image.DataBuffer;
+import com.google.code.appengine.awt.image.BufferedImage;
+import com.google.code.appengine.awt.image.DataBuffer;
+
 
 public abstract class FileInfo
 {
