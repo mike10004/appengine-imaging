@@ -1,6 +1,6 @@
 package org.apache.harmony.awt.wtk.appengine;
 
-import org.apache.harmony.awt.gl.appengine.JavaGraphics2DFactory;
+import org.apache.harmony.awt.gl.appengine.AppEngineGraphics2DFactory;
 import org.apache.harmony.awt.wtk.CursorFactory;
 import org.apache.harmony.awt.wtk.GraphicsFactory;
 import org.apache.harmony.awt.wtk.NativeEventQueue;
@@ -14,11 +14,11 @@ import org.apache.harmony.awt.wtk.WindowFactory;
 import com.google.code.appengine.awt.GraphicsDevice;
 
 
-public class JavaWTK extends WTK
+public class AppEngineWTK extends WTK
 {
 //    private final JavaSystemProperties systemProperties = new JavaSystemProperties();
-    private final JavaEventQueue eventQueue = new JavaEventQueue();
-    private final GraphicsFactory graphicsFactory = new JavaGraphics2DFactory();
+    private final AppEngineEventQueue eventQueue = new AppEngineEventQueue();
+    private final GraphicsFactory graphicsFactory = new AppEngineGraphics2DFactory();
 //    private final CursorFactory cursorFactory = new WinCursorFactory(eventQueue);
 //    private final NativeMouseInfo mouseInfo = new WinMouseInfo();
 //    private WinRobot robot;

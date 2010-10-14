@@ -2,7 +2,7 @@ package org.apache.harmony.awt.wtk.appengine;
 
 import org.apache.harmony.awt.wtk.NativeEventQueue;
 
-public class JavaEventQueue extends NativeEventQueue
+public class AppEngineEventQueue extends NativeEventQueue
 {
 	@Override
 	public void awake()

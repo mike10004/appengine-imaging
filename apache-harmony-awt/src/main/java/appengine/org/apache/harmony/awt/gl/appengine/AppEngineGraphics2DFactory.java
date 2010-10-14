@@ -13,16 +13,16 @@ import com.google.code.appengine.awt.Graphics2D;
 import com.google.code.appengine.awt.GraphicsEnvironment;
 
 
-public class JavaGraphics2DFactory extends CommonGraphics2DFactory
+public class AppEngineGraphics2DFactory extends CommonGraphics2DFactory
 {
-	public JavaGraphics2DFactory()
+	public AppEngineGraphics2DFactory()
 	{
 		inst = this;
 	}
 
 	public GraphicsEnvironment createGraphicsEnvironment(WindowFactory wf)
 	{
-		return new JavaGraphicsEnvironment();
+		return new AppEngineGraphicsEnvironment();
 	}
 
 	@Override

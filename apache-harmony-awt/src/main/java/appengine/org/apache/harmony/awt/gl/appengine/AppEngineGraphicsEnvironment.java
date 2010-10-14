@@ -6,7 +6,7 @@ import com.google.code.appengine.awt.GraphicsDevice;
 import com.google.code.appengine.awt.HeadlessException;
 
 
-public class JavaGraphicsEnvironment extends CommonGraphicsEnvironment
+public class AppEngineGraphicsEnvironment extends CommonGraphicsEnvironment
 {
 	@Override
 	public GraphicsDevice getDefaultScreenDevice() throws HeadlessException

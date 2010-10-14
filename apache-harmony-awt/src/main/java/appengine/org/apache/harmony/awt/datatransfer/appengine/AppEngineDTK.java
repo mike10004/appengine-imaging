@@ -9,7 +9,7 @@ import com.google.code.appengine.awt.dnd.peer.DragSourceContextPeer;
 import com.google.code.appengine.awt.dnd.peer.DropTargetContextPeer;
 
 
-public class JavaDTK extends DTK
+public class AppEngineDTK extends DTK
 {
 	@Override
 	public DragSourceContextPeer createDragSourceContextPeer(
