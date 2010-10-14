@@ -90,7 +90,7 @@ public class GridBagLayoutTest extends AWTTestCase {
     }
 
     public final void testToString() {
-        assertTrue(new String("java.nawt.GridBagLayout").equals(layout.toString()));
+        assertTrue(new String("com.google.code.appengine.awt.GridBagLayout").equals(layout.toString()));
     }
 
     public final void testAddLayoutComponentStringComponent() {

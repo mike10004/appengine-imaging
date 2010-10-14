@@ -21,7 +21,7 @@ package org.apache.harmony.awt.wtk;
 
 /**
  * The interface provides access to platform dependent functionality
- * for the class java.nawt.Cursor.
+ * for the class com.google.code.appengine.awt.Cursor.
  */
 public interface NativeCursor {
     /**

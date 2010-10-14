@@ -93,7 +93,7 @@ public class CardLayoutTest extends AWTTestCase {
     }
 
     public void testToString() {
-        assertTrue(new String("java.nawt.CardLayout[hgap=10,vgap=20]").equals(new CardLayout(10,20).toString()));
+        assertTrue(new String("com.google.code.appengine.awt.CardLayout[hgap=10,vgap=20]").equals(new CardLayout(10,20).toString()));
     }
 
     public final void testGetSetHgap() {

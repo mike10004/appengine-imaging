@@ -122,7 +122,7 @@ public class GridLayoutTest extends AWTTestCase {
 
     public void testToString() {
         layout = new GridLayout(1,2,3,4);
-        assertTrue(new String("java.nawt.GridLayout[hgap=3,vgap=4,rows=1,cols=2]").equals(layout.toString()));
+        assertTrue(new String("com.google.code.appengine.awt.GridLayout[hgap=3,vgap=4,rows=1,cols=2]").equals(layout.toString()));
     }
 
     public final void testGetSetHgap() {

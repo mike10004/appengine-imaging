@@ -89,7 +89,7 @@ public class FileDialogTest extends TestCase {
     }
     
     /*
-     * Class under test for void FileDialog(java.nawt.Frame)
+     * Class under test for void FileDialog(com.google.code.appengine.awt.Frame)
      */
     public final void testFileDialogDialog() {
         fd = new FileDialog(dialog);
@@ -100,7 +100,7 @@ public class FileDialogTest extends TestCase {
     }
 
     /*
-     * Class under test for void FileDialog(java.nawt.Frame, java.lang.String)
+     * Class under test for void FileDialog(com.google.code.appengine.awt.Frame, java.lang.String)
      */
     public final void testFileDialogDialogString() {
         String title = "Open";
@@ -111,7 +111,7 @@ public class FileDialogTest extends TestCase {
     }
 
     /*
-     * Class under test for void FileDialog(java.nawt.Frame, java.lang.String, int)
+     * Class under test for void FileDialog(com.google.code.appengine.awt.Frame, java.lang.String, int)
      */
     public final void testFileDialogDialogStringint() {
         String title = "Save";
@@ -130,7 +130,7 @@ public class FileDialogTest extends TestCase {
         assertEquals(FileDialog.SAVE, fd.getMode());
     }
     /*
-     * Class under test for void FileDialog(java.nawt.Frame)
+     * Class under test for void FileDialog(com.google.code.appengine.awt.Frame)
      */
     public final void testFileDialogFrame() {
         constructorTest();
@@ -140,7 +140,7 @@ public class FileDialogTest extends TestCase {
     }
 
     /*
-     * Class under test for void FileDialog(java.nawt.Frame, java.lang.String)
+     * Class under test for void FileDialog(com.google.code.appengine.awt.Frame, java.lang.String)
      */
     public final void testFileDialogFrameString() {
         String title = "Open";
@@ -151,7 +151,7 @@ public class FileDialogTest extends TestCase {
     }
 
     /*
-     * Class under test for void FileDialog(java.nawt.Frame, java.lang.String, int)
+     * Class under test for void FileDialog(com.google.code.appengine.awt.Frame, java.lang.String, int)
      */
     public final void testFileDialogFrameStringint() {
         String title = "Save";

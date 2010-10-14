@@ -104,7 +104,7 @@ public class DimensionTest extends SerializeTestCase {
     }
 
     public void testToString() {
-        assertEquals(d.toString(), "java.nawt.Dimension[width=2,height=3]");
+        assertEquals(d.toString(), "com.google.code.appengine.awt.Dimension[width=2,height=3]");
     }
 
     public void testSerializeRead1() {

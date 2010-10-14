@@ -27,7 +27,6 @@ public class AppEngineWTK extends WTK
 	@Override
 	public CursorFactory getCursorFactory()
 	{
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -35,13 +34,6 @@ public class AppEngineWTK extends WTK
 	public GraphicsFactory getGraphicsFactory()
 	{
 		return graphicsFactory;
-	}
-
-	@Override
-	public boolean getLockingState(int keyCode)
-	{
-		// TODO Auto-generated method stub
-		return false;
 	}
 
 	@Override
@@ -53,42 +45,41 @@ public class AppEngineWTK extends WTK
 	@Override
 	public NativeIM getNativeIM()
 	{
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public NativeMouseInfo getNativeMouseInfo()
 	{
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public NativeRobot getNativeRobot(GraphicsDevice screen)
 	{
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public SystemProperties getSystemProperties()
 	{
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public WindowFactory getWindowFactory()
 	{
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public void setLockingState(int keyCode, boolean on)
 	{
-		// TODO Auto-generated method stub
-		
+	}
+
+	@Override
+	public boolean getLockingState(int keyCode)
+	{
+		return false;
 	}
 }

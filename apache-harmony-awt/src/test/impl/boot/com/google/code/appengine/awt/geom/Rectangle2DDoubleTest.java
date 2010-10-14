@@ -104,7 +104,7 @@ public class Rectangle2DDoubleTest extends TestCase {
     }
 
     public void testToString() {
-        assertEquals("java.nawt.geom.Rectangle2D$Double[x=1.0,y=2.0,width=3.0,height=4.0]", r.toString());
+        assertEquals("com.google.code.appengine.awt.geom.Rectangle2D$Double[x=1.0,y=2.0,width=3.0,height=4.0]", r.toString());
     }
 
     public void testCreateIntersection() {

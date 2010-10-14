@@ -42,7 +42,7 @@ public class AccessibleAWTTextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.AccessibleAWTTextArea.getAccessibleStateSet()'
+     * Test method for 'com.google.code.appengine.awt.TextArea.AccessibleAWTTextArea.getAccessibleStateSet()'
      */
     public void testGetAccessibleStateSet() {
         AccessibleState state = AccessibleState.MULTI_LINE;

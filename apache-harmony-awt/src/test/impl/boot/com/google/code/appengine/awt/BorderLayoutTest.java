@@ -88,7 +88,7 @@ public class BorderLayoutTest extends AWTTestCase {
 
     public final void testToString() {
         BorderLayout layout = new BorderLayout(30, 300);
-        assertTrue(new String("java.nawt.BorderLayout[hgap=30,vgap=300]").equals(layout.toString()));
+        assertTrue(new String("com.google.code.appengine.awt.BorderLayout[hgap=30,vgap=300]").equals(layout.toString()));
     }
 
     public final void testAddLayoutComponentComponentObject() {

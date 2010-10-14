@@ -42,7 +42,7 @@ import com.google.code.appengine.awt.peer.ComponentPeer;
 import junit.framework.TestCase;
 
 /**
- * Unit test for class java.nawt.dnd.DropTarget
+ * Unit test for class com.google.code.appengine.awt.dnd.DropTarget
  */
 @SuppressWarnings("serial")
 public class DropTargetTest extends TestCase {

@@ -47,7 +47,7 @@ public abstract class FontManager {
         com.google.code.appengine.awt.Toolkit.getDefaultToolkit();
     }
     
-    public static final boolean IS_FONTLIB  = "true".equals(Utils.getSystemProperty("java.nawt.fontlib")) || GraphicsEnvironment.isHeadless();    
+    public static final boolean IS_FONTLIB  = "true".equals(Utils.getSystemProperty("java.awt.fontlib")) || GraphicsEnvironment.isHeadless();    
     
     /**
      * array of font families names

@@ -43,7 +43,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.addNotify()'
+     * Test method for 'com.google.code.appengine.awt.TextArea.addNotify()'
      */
     public void testAddNotify() {
         frame = new Frame();
@@ -56,7 +56,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.getAccessibleContext()'
+     * Test method for 'com.google.code.appengine.awt.TextArea.getAccessibleContext()'
      */
     public void testGetAccessibleContext() {
         assertTrue(area.getAccessibleContext() instanceof 
@@ -65,7 +65,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.paramString()'
+     * Test method for 'com.google.code.appengine.awt.TextArea.paramString()'
      */
     public void testParamString() {
         String paramStr = area.paramString();
@@ -76,7 +76,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.getMinimumSize()'
+     * Test method for 'com.google.code.appengine.awt.TextArea.getMinimumSize()'
      */
     public void testGetMinimumSize() {
         Dimension minSize = new Dimension();
@@ -96,7 +96,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.minimumSize()'
+     * Test method for 'com.google.code.appengine.awt.TextArea.minimumSize()'
      */
     @SuppressWarnings("deprecation")
     public void testMinimumSize() {
@@ -124,7 +124,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.getPreferredSize()'
+     * Test method for 'com.google.code.appengine.awt.TextArea.getPreferredSize()'
      */
     public void testGetPreferredSize() {
         Dimension prefSize = new Dimension();
@@ -143,7 +143,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.preferredSize()'
+     * Test method for 'com.google.code.appengine.awt.TextArea.preferredSize()'
      */
     @SuppressWarnings("deprecation")
     public void testPreferredSize() {
@@ -163,7 +163,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.TextArea()'
+     * Test method for 'com.google.code.appengine.awt.TextArea.TextArea()'
      */
     public void testTextArea() {
         assertNotNull(area);
@@ -175,7 +175,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.TextArea(String, int, int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.TextArea(String, int, int, int)'
      */
     public void testTextAreaStringIntIntInt() {
         String text = "text";
@@ -194,7 +194,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.TextArea(String, int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.TextArea(String, int, int)'
      */
     public void testTextAreaStringIntInt() {
         String text = "text";
@@ -216,7 +216,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.TextArea(String)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.TextArea(String)'
      */
     public void testTextAreaString() {
         String text = "text";
@@ -230,7 +230,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.TextArea(int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.TextArea(int, int)'
      */
     public void testTextAreaIntInt() {
         int cols = 12;
@@ -242,7 +242,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.append(String)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.append(String)'
      */
     public void testAppend() {
         String text = "text";
@@ -256,7 +256,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.insert(String, int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.insert(String, int)'
      */
     public void testInsert() {
         String text = "text";
@@ -269,7 +269,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.appendText(String)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.appendText(String)'
      */
     @SuppressWarnings("deprecation")
     public void testAppendText() {
@@ -282,14 +282,14 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.getColumns()'
+     * Test method for 'com.google.code.appengine.awt.TextArea.getColumns()'
      */
     public void testGetColumns() {
         assertEquals(0, area.getColumns());
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.getMinimumSize(int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.getMinimumSize(int, int)'
      */
     public void testGetMinimumSizeIntInt() {
         int rows = 1;
@@ -321,7 +321,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.getPreferredSize(int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.getPreferredSize(int, int)'
      */
     public void testGetPreferredSizeIntInt() {
         int rows = 2;
@@ -343,21 +343,21 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.getRows()'
+     * Test method for 'com.google.code.appengine.awt.TextArea.getRows()'
      */
     public void testGetRows() {
         assertEquals(0, area.getRows());
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.getScrollbarVisibility()'
+     * Test method for 'com.google.code.appengine.awt.TextArea.getScrollbarVisibility()'
      */
     public void testGetScrollbarVisibility() {
         assertEquals(TextArea.SCROLLBARS_BOTH, area.getScrollbarVisibility());
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.insertText(String, int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.insertText(String, int)'
      */
     @SuppressWarnings("deprecation")
     public void testInsertText() {
@@ -371,7 +371,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.minimumSize(int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.minimumSize(int, int)'
      */
     @SuppressWarnings("deprecation")
     public void testMinimumSizeIntInt() {
@@ -385,7 +385,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.preferredSize(int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.preferredSize(int, int)'
      */
     @SuppressWarnings("deprecation")
     public void testPreferredSizeIntInt() {
@@ -399,7 +399,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.replaceRange(String, int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.replaceRange(String, int, int)'
      */
     public void testReplaceRange() {
         int start = 8;
@@ -415,7 +415,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.replaceText(String, int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.replaceText(String, int, int)'
      */
     @SuppressWarnings("deprecation")
     public void testReplaceText() {
@@ -429,7 +429,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.setColumns(int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.setColumns(int)'
      */
     public void testSetColumns() {
         int cols = 80;
@@ -446,7 +446,7 @@ public class TextAreaTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextArea.setRows(int)'
+     * Test method for 'com.google.code.appengine.awt.TextArea.setRows(int)'
      */
     public void testSetRows() {
         int rows = 25;

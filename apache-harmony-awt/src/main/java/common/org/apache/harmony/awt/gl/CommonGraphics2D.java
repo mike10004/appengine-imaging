@@ -117,7 +117,7 @@ import com.google.code.appengine.awt.image.renderable.RenderableImage;
  * </ul></p>
  * <p>
  * DRL Java 2D* also uses blitters to fill the shapes and the user-defined subclasses 
- * of the java.nawt.Paint class with paints, which the system does not support.
+ * of the java.awt.Paint class with paints, which the system does not support.
  * </p>
  *
  *<h3>Text Renderers</h3>

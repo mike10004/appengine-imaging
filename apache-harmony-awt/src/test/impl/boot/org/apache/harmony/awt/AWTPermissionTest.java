@@ -26,7 +26,7 @@ import com.google.code.appengine.awt.Window;
 import junit.framework.TestCase;
 
 /**
- * Test case for java.nawt.AWTPermission
+ * Test case for com.google.code.appengine.awt.AWTPermission
  */
 public class AWTPermissionTest extends TestCase {
 
@@ -49,7 +49,7 @@ public class AWTPermissionTest extends TestCase {
     }
 
     /**
-     * @tests java.nawt.AWTPermission#AWTPermission((String) test case for
+     * @tests com.google.code.appengine.awt.AWTPermission#AWTPermission((String) test case for
      *        "accessEventQueue"
      */
     @SuppressWarnings("nls")
@@ -63,7 +63,7 @@ public class AWTPermissionTest extends TestCase {
     }
 
     /**
-     * @tests java.nawt.AWTPermission#AWTPermission((String) test case for
+     * @tests com.google.code.appengine.awt.AWTPermission#AWTPermission((String) test case for
      *        "accessClipboard"
      */
     @SuppressWarnings("nls")
@@ -77,7 +77,7 @@ public class AWTPermissionTest extends TestCase {
     }
 
     /**
-     * @tests java.nawt.AWTPermission#AWTPermission((String) test case for
+     * @tests com.google.code.appengine.awt.AWTPermission#AWTPermission((String) test case for
      *        "showWindowWithoutWarningBanner"
      */
     public void test_checkTopLevelWindowLjava_lang_Object() {

@@ -44,7 +44,7 @@ public class LookupOpTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.image.LookupOp.filter()' when src and dst have
+     * Test method for 'com.google.code.appengine.awt.image.LookupOp.filter()' when src and dst have
      * different heights or widths.
      */
     public final void test_LookupOp_filter_DifferentDimensionsTest() {
@@ -95,7 +95,7 @@ public class LookupOpTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.image.LookupOp.LookupOp(LookupTable, RenderingHints)'
+     * Test method for 'com.google.code.appengine.awt.image.LookupOp.LookupOp(LookupTable, RenderingHints)'
      * when the LookupTable argument is null.
      */
     public final void test_LookupOp_LookupTableRenderingHints_NullLookupTable() {

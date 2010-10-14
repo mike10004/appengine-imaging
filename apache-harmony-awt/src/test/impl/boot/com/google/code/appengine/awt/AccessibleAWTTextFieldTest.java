@@ -41,7 +41,7 @@ public class AccessibleAWTTextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.AccessibleAWTTextField.getAccessibleStateSet()'
+     * Test method for 'com.google.code.appengine.awt.TextField.AccessibleAWTTextField.getAccessibleStateSet()'
      */
     public void testGetAccessibleStateSet() {
         AccessibleState state = AccessibleState.SINGLE_LINE;

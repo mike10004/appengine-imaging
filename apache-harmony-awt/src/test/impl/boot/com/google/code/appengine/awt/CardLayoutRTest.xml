@@ -47,7 +47,7 @@ Author:  Dmitry A. Durnev
                <Source name="CardLayoutRTest.java"/>
                        
                <Runner ID="JUExec">
-                       <Param name="JUnit" value="java.nawt.CardLayoutRTest"/>
+                       <Param name="JUnit" value="com.google.code.appengine.awt.CardLayoutRTest"/>
                </Runner>
 
 </Test>

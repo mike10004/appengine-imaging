@@ -104,7 +104,7 @@ public class Rectangle2DFloatTest extends TestCase {
     }
 
     public void testToString() {
-        assertEquals("java.nawt.geom.Rectangle2D$Float[x=1.0,y=2.0,width=3.0,height=4.0]", r.toString());
+        assertEquals("com.google.code.appengine.awt.geom.Rectangle2D$Float[x=1.0,y=2.0,width=3.0,height=4.0]", r.toString());
     }
 
     public void testCreateIntersection() {

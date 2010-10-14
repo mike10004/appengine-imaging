@@ -120,7 +120,7 @@ public class PointTest extends SerializeTestCase {
     }
 
     public void testToString() {
-        assertEquals("java.nawt.Point[x=1,y=2]", new Point(1, 2).toString());
+        assertEquals("com.google.code.appengine.awt.Point[x=1,y=2]", new Point(1, 2).toString());
     }
 
     public void testEquals() {

@@ -28,7 +28,7 @@ public class AllTests {
 
 	public static Test suite() {
 		TestSuite suite = new TestSuite(
-				"Test for org.apache.harmony.tests.java.nawt");
+				"Test for org.apache.harmony.tests.com.google.code.appengine.awt");
 		//$JUnit-BEGIN$
         suite.addTestSuite(AWTEventMulticasterTest.class);
 		//$JUnit-END$

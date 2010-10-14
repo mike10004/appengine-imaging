@@ -104,7 +104,7 @@ public class RectangleTest extends SerializeTestCase {
     }
 
     public void testToString() {
-        assertEquals("java.nawt.Rectangle[x=1,y=2,width=3,height=4]", r.toString());
+        assertEquals("com.google.code.appengine.awt.Rectangle[x=1,y=2,width=3,height=4]", r.toString());
     }
 
     public void testGetSize() {

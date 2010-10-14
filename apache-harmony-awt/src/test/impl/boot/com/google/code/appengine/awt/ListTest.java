@@ -90,7 +90,7 @@ public class ListTest extends TestCase {
     }
 
     /*
-     * Class under test for java.nawt.Dimension getMinimumSize()
+     * Class under test for com.google.code.appengine.awt.Dimension getMinimumSize()
      */
     public final void testGetMinimumSize() {
         assertEquals(new Dimension(), list.getMinimumSize());
@@ -105,14 +105,14 @@ public class ListTest extends TestCase {
     }
 
     /*
-     * Class under test for java.nawt.Dimension minimumSize()
+     * Class under test for com.google.code.appengine.awt.Dimension minimumSize()
      */
     public final void testMinimumSize() {
         // TODO: deprecated
     }
 
     /*
-     * Class under test for java.nawt.Dimension preferredSize()
+     * Class under test for com.google.code.appengine.awt.Dimension preferredSize()
      */
     public final void testPreferredSize() {
         // TODO: deprecated
@@ -292,7 +292,7 @@ public class ListTest extends TestCase {
     }
 
     /*
-     * Class under test for java.nawt.Dimension getMinimumSize(int)
+     * Class under test for com.google.code.appengine.awt.Dimension getMinimumSize(int)
      */
     public final void testGetMinimumSizeint() {
         int i = 1;
@@ -308,14 +308,14 @@ public class ListTest extends TestCase {
     }
 
     /*
-     * Class under test for java.nawt.Dimension minimumSize(int)
+     * Class under test for com.google.code.appengine.awt.Dimension minimumSize(int)
      */
     public final void testMinimumSizeint() {
         // TODO: deprecated
     }
 
     /*
-     * Class under test for java.nawt.Dimension preferredSize(int)
+     * Class under test for com.google.code.appengine.awt.Dimension preferredSize(int)
      */
     public final void testPreferredSizeint() {
         // TODO: deprecated

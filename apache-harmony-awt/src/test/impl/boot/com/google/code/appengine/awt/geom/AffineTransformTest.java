@@ -866,7 +866,7 @@ public class AffineTransformTest extends GeomTestCase {
 
     public void testToString() {
         assertEquals(
-                "java.nawt.geom.AffineTransform[[2.0, 4.0, 6.0], [3.0, 5.0, 7.0]]",
+                "com.google.code.appengine.awt.geom.AffineTransform[[2.0, 4.0, 6.0], [3.0, 5.0, 7.0]]",
                 t.toString());
     }
 

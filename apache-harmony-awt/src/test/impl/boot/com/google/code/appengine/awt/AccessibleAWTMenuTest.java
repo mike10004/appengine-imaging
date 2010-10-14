@@ -41,7 +41,7 @@ public class AccessibleAWTMenuTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.Menu.AccessibleAWTMenu.getAccessibleRole()'
+     * Test method for 'com.google.code.appengine.awt.Menu.AccessibleAWTMenu.getAccessibleRole()'
      */
     public void testGetAccessibleRole() {
         assertSame(AccessibleRole.MENU, ac.getAccessibleRole());
@@ -49,7 +49,7 @@ public class AccessibleAWTMenuTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.Menu.AccessibleAWTMenu.AccessibleAWTMenu(Menu)'
+     * Test method for 'com.google.code.appengine.awt.Menu.AccessibleAWTMenu.AccessibleAWTMenu(Menu)'
      */
     public void testAccessibleAWTMenu() {
         assertTrue(ac instanceof AccessibleAWTMenu);

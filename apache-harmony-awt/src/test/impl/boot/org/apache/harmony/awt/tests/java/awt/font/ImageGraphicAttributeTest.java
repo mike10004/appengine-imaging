@@ -34,7 +34,7 @@ public class ImageGraphicAttributeTest extends TestCase {
     int alignment =  GraphicAttribute.ROMAN_BASELINE;
 
     /*
-     * Test method for 'java.nawt.font.ImageGraphicAttribute.getAdvance()'
+     * Test method for 'com.google.code.appengine.awt.font.ImageGraphicAttribute.getAdvance()'
      */
     public final void testGetAdvance() {
         float xOrigin = 5;
@@ -49,7 +49,7 @@ public class ImageGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ImageGraphicAttribute.getAscent()'
+     * Test method for 'com.google.code.appengine.awt.font.ImageGraphicAttribute.getAscent()'
      */
     public final void testGetAscent() {
         float yOrigin = 5;
@@ -64,7 +64,7 @@ public class ImageGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ImageGraphicAttribute.getBounds()'
+     * Test method for 'com.google.code.appengine.awt.font.ImageGraphicAttribute.getBounds()'
      */
     public final void testGetBounds() {
         float yOrigin = 5;
@@ -80,7 +80,7 @@ public class ImageGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ImageGraphicAttribute.getDescent()'
+     * Test method for 'com.google.code.appengine.awt.font.ImageGraphicAttribute.getDescent()'
      */
     public final void testGetDescent() {
         float yOrigin = 5;
@@ -96,7 +96,7 @@ public class ImageGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ImageGraphicAttribute.ImageGraphicAttribute(Image, int, float, float)'
+     * Test method for 'com.google.code.appengine.awt.font.ImageGraphicAttribute.ImageGraphicAttribute(Image, int, float, float)'
      */
     public final void testImageGraphicAttributeImageInt() {
         ImageGraphicAttribute igAttribute = new ImageGraphicAttribute(img, alignment);
@@ -125,7 +125,7 @@ public class ImageGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ImageGraphicAttribute.ImageGraphicAttribute(Image, int)'
+     * Test method for 'com.google.code.appengine.awt.font.ImageGraphicAttribute.ImageGraphicAttribute(Image, int)'
      */
     public final void testImageGraphicAttributeImageIntFloatFloat() {
         float xOrigin = 5;
@@ -156,7 +156,7 @@ public class ImageGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ImageGraphicAttribute.equals(ImageGraphicAttribute)'
+     * Test method for 'com.google.code.appengine.awt.font.ImageGraphicAttribute.equals(ImageGraphicAttribute)'
      */
     public final void testEqualsImageGraphicAttribute() {
         iga = new ImageGraphicAttribute(img, alignment);
@@ -165,7 +165,7 @@ public class ImageGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ImageGraphicAttribute.equals(Object)'
+     * Test method for 'com.google.code.appengine.awt.font.ImageGraphicAttribute.equals(Object)'
      */
     public final void testEqualsObject() {
         iga = new ImageGraphicAttribute(img, alignment);
@@ -174,7 +174,7 @@ public class ImageGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GraphicAttribute.getAlignment()'
+     * Test method for 'com.google.code.appengine.awt.font.GraphicAttribute.getAlignment()'
      */
     public final void testGetAlignment() {
         iga = new ImageGraphicAttribute(img, alignment);
@@ -182,7 +182,7 @@ public class ImageGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GraphicAttribute.getJustificationInfo()'
+     * Test method for 'com.google.code.appengine.awt.font.GraphicAttribute.getJustificationInfo()'
      */
     public final void testGetJustificationInfo() {
         iga = new ImageGraphicAttribute(img, alignment);

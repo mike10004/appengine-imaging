@@ -50,7 +50,7 @@ public class DataFlavor implements Externalizable, Cloneable {
                     "Unicode String"); //$NON-NLS-1$
 
     public static final DataFlavor imageFlavor =
-            new DataFlavor("image/x-java-image; class=java.nawt.Image", //$NON-NLS-1$
+            new DataFlavor("image/x-java-image; class=java.awt.Image", //$NON-NLS-1$
                     "Image"); //$NON-NLS-1$
 
     public static final DataFlavor javaFileListFlavor =

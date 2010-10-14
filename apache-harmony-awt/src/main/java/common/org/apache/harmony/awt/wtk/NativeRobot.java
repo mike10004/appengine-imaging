@@ -24,7 +24,7 @@ import com.google.code.appengine.awt.Rectangle;
 import com.google.code.appengine.awt.image.BufferedImage;
 
 /**
- * A cross-platform interface for java.nawt.Robot implementation
+ * A cross-platform interface for com.google.code.appengine.awt.Robot implementation
  */
 public interface NativeRobot {
 

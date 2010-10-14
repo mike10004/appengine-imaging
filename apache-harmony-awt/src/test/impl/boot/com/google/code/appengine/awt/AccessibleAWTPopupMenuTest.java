@@ -41,14 +41,14 @@ public class AccessibleAWTPopupMenuTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.PopupMenu.AccessibleAWTPopupMenu.getAccessibleRole()'
+     * Test method for 'com.google.code.appengine.awt.PopupMenu.AccessibleAWTPopupMenu.getAccessibleRole()'
      */
     public void testGetAccessibleRole() {
         assertSame(AccessibleRole.POPUP_MENU, ac.getAccessibleRole());
     }
 
     /*
-     * Test method for 'java.nawt.PopupMenu.AccessibleAWTPopupMenu.AccessibleAWTPopupMenu(PopupMenu)'
+     * Test method for 'com.google.code.appengine.awt.PopupMenu.AccessibleAWTPopupMenu.AccessibleAWTPopupMenu(PopupMenu)'
      */
     public void testAccessibleAWTPopupMenu() {
         assertTrue(ac instanceof AccessibleAWTPopupMenu);

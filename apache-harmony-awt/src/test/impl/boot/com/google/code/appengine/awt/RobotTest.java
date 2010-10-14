@@ -167,7 +167,7 @@ public class RobotTest extends TestCase {
     }
 
     /*
-     * Class under test for void Robot(java.nawt.GraphicsDevice)
+     * Class under test for void Robot(com.google.code.appengine.awt.GraphicsDevice)
      */
     public final void testRobotGraphicsDevice() throws AWTException {
         try {

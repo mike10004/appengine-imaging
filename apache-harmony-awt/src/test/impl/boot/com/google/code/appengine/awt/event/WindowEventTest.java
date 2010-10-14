@@ -85,7 +85,7 @@ public class WindowEventTest extends TestCase {
         WindowEvent event = new WindowEvent(window, WindowEvent.WINDOW_ACTIVATED, opposite,
                 Frame.MAXIMIZED_BOTH, Frame.MAXIMIZED_HORIZ);
 
-        assertTrue(event.paramString().startsWith("WINDOW_ACTIVATED,opposite=java.nawt.Window["));
+        assertTrue(event.paramString().startsWith("WINDOW_ACTIVATED,opposite=com.google.code.appengine.awt.Window["));
         assertTrue(event.paramString().endsWith("],oldState=6,newState=2"));
         event = new WindowEvent(window, WindowEvent.WINDOW_ACTIVATED + 1024, opposite,
                 Frame.MAXIMIZED_BOTH, Frame.MAXIMIZED_HORIZ);

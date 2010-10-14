@@ -128,7 +128,7 @@ public class WindowTest extends TestCase {
     public final void testApplyResourceBundleString() {
         assertNotNull(w);
         assertSame(ComponentOrientation.UNKNOWN, w.getComponentOrientation());
-        w.applyResourceBundle("java.nawt.MyResourceBundle");
+        w.applyResourceBundle("com.google.code.appengine.awt.MyResourceBundle");
         assertSame(ComponentOrientation.RIGHT_TO_LEFT,
                    w.getComponentOrientation());
     }

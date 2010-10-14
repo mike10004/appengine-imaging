@@ -62,7 +62,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.addNotify()'
+     * Test method for 'com.google.code.appengine.awt.TextField.addNotify()'
      */
     public void testAddNotify() {
         frame = new Frame();
@@ -75,7 +75,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.getAccessibleContext()'
+     * Test method for 'com.google.code.appengine.awt.TextField.getAccessibleContext()'
      */
     public void testGetAccessibleContext() {
         assertTrue(tf.getAccessibleContext() instanceof 
@@ -83,7 +83,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.paramString()'
+     * Test method for 'com.google.code.appengine.awt.TextField.paramString()'
      */
     public void testParamString() {
         tf.setEchoChar('q');
@@ -93,7 +93,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.getMinimumSize()'
+     * Test method for 'com.google.code.appengine.awt.TextField.getMinimumSize()'
      */
     public void testGetMinimumSize() {
         Dimension minSize = new Dimension();
@@ -113,7 +113,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.minimumSize()'
+     * Test method for 'com.google.code.appengine.awt.TextField.minimumSize()'
      */
     @SuppressWarnings("deprecation")
     public void testMinimumSize() {
@@ -135,7 +135,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.getPreferredSize()'
+     * Test method for 'com.google.code.appengine.awt.TextField.getPreferredSize()'
      */
     public void testGetPreferredSize() {
         Dimension prefSize = new Dimension();
@@ -152,7 +152,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.preferredSize()'
+     * Test method for 'com.google.code.appengine.awt.TextField.preferredSize()'
      */
     @SuppressWarnings("deprecation")
     public void testPreferredSize() {
@@ -170,7 +170,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.processEvent(AWTEvent)'
+     * Test method for 'com.google.code.appengine.awt.TextField.processEvent(AWTEvent)'
      */
     public void testProcessEvent() {
         eventProcessed = false;
@@ -186,7 +186,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.getListeners(Class)'
+     * Test method for 'com.google.code.appengine.awt.TextField.getListeners(Class)'
      */
     public void testGetListeners() {
         Class<ActionListener> cls = ActionListener.class;
@@ -198,7 +198,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.setText(String)'
+     * Test method for 'com.google.code.appengine.awt.TextField.setText(String)'
      */
     public void testSetText() {
         String text = "Some text";
@@ -228,7 +228,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.TextField(String)'
+     * Test method for 'com.google.code.appengine.awt.TextField.TextField(String)'
      */
     public void testTextFieldString() {
         String text = "text";
@@ -242,7 +242,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.TextField(int)'
+     * Test method for 'com.google.code.appengine.awt.TextField.TextField(int)'
      */
     public void testTextFieldInt() {
         int cols = 80;
@@ -255,7 +255,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.TextField()'
+     * Test method for 'com.google.code.appengine.awt.TextField.TextField()'
      */
     public void testTextField() {
         assertNotNull(tf);
@@ -264,7 +264,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.TextField(String, int)'
+     * Test method for 'com.google.code.appengine.awt.TextField.TextField(String, int)'
      */
     public void testTextFieldStringInt() {
         int cols = 2;
@@ -275,7 +275,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.getColumns()'
+     * Test method for 'com.google.code.appengine.awt.TextField.getColumns()'
      */
     public void testGetColumns() {
         assertEquals(0, tf.getColumns());
@@ -285,7 +285,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.getMinimumSize(int)'
+     * Test method for 'com.google.code.appengine.awt.TextField.getMinimumSize(int)'
      */
     public void testGetMinimumSizeInt() {
         int cols = 1;
@@ -312,7 +312,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.getPreferredSize(int)'
+     * Test method for 'com.google.code.appengine.awt.TextField.getPreferredSize(int)'
      */
     public void testGetPreferredSizeInt() {
         int cols = 3;
@@ -331,7 +331,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.minimumSize(int)'
+     * Test method for 'com.google.code.appengine.awt.TextField.minimumSize(int)'
      */
     @SuppressWarnings("deprecation")
     public void testMinimumSizeInt() {
@@ -347,7 +347,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.preferredSize(int)'
+     * Test method for 'com.google.code.appengine.awt.TextField.preferredSize(int)'
      */
     @SuppressWarnings("deprecation")
     public void testPreferredSizeInt() {
@@ -357,7 +357,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.setColumns(int)'
+     * Test method for 'com.google.code.appengine.awt.TextField.setColumns(int)'
      */
     public void testSetColumns() {
         int cols = 80;
@@ -373,7 +373,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.echoCharIsSet()'
+     * Test method for 'com.google.code.appengine.awt.TextField.echoCharIsSet()'
      */
     public void testEchoCharIsSet() {
         assertFalse(tf.echoCharIsSet());
@@ -381,7 +381,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.getEchoChar()'
+     * Test method for 'com.google.code.appengine.awt.TextField.getEchoChar()'
      */
     public void testGetEchoChar() {
         assertEquals('\0', tf.getEchoChar());
@@ -389,7 +389,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.setEchoChar(char)'
+     * Test method for 'com.google.code.appengine.awt.TextField.setEchoChar(char)'
      */
     public void testSetEchoChar() {
         char echoChar = 'q';
@@ -403,7 +403,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.setEchoCharacter(char)'
+     * Test method for 'com.google.code.appengine.awt.TextField.setEchoCharacter(char)'
      */
     @SuppressWarnings("deprecation")
     public void testSetEchoCharacter() {
@@ -414,7 +414,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.addActionListener(ActionListener)'
+     * Test method for 'com.google.code.appengine.awt.TextField.addActionListener(ActionListener)'
      */
     public void testAddGetRemoveActionListener() {
         assertTrue(tf.getActionListeners().length == 0);
@@ -428,7 +428,7 @@ public class TextFieldTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextField.processActionEvent(ActionEvent)'
+     * Test method for 'com.google.code.appengine.awt.TextField.processActionEvent(ActionEvent)'
      */
     public void testProcessActionEvent() {
         eventProcessed = false;

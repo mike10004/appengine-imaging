@@ -42,7 +42,7 @@ public class ShapeGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ShapeGraphicAttribute.getAdvance()'
+     * Test method for 'com.google.code.appengine.awt.font.ShapeGraphicAttribute.getAdvance()'
      */
     public final void testGetAdvance() {
 
@@ -55,7 +55,7 @@ public class ShapeGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ShapeGraphicAttribute.getAscent()'
+     * Test method for 'com.google.code.appengine.awt.font.ShapeGraphicAttribute.getAscent()'
      */
     public final void testGetAscent() {
         sga = new ShapeGraphicAttribute(shape, alignment, stroke);
@@ -68,7 +68,7 @@ public class ShapeGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ShapeGraphicAttribute.getBounds()'
+     * Test method for 'com.google.code.appengine.awt.font.ShapeGraphicAttribute.getBounds()'
      */
     public final void testGetBounds() {
         sga = new ShapeGraphicAttribute(shape, alignment, ShapeGraphicAttribute.FILL);
@@ -78,7 +78,7 @@ public class ShapeGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ShapeGraphicAttribute.getDescent()'
+     * Test method for 'com.google.code.appengine.awt.font.ShapeGraphicAttribute.getDescent()'
      */
     public final void testGetDescent() {
         sga = new ShapeGraphicAttribute(shape, alignment, stroke);
@@ -90,7 +90,7 @@ public class ShapeGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ShapeGraphicAttribute.ShapeGraphicAttribute(Shape, int, boolean)'
+     * Test method for 'com.google.code.appengine.awt.font.ShapeGraphicAttribute.ShapeGraphicAttribute(Shape, int, boolean)'
      */
     public final void testShapeGraphicAttribute() {
         ShapeGraphicAttribute shAttribute = new ShapeGraphicAttribute(shape, alignment, stroke);
@@ -124,7 +124,7 @@ public class ShapeGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ShapeGraphicAttribute.equals(ShapeGraphicAttribute)'
+     * Test method for 'com.google.code.appengine.awt.font.ShapeGraphicAttribute.equals(ShapeGraphicAttribute)'
      */
     public final void testEqualsShapeGraphicAttribute() {
         sga = new ShapeGraphicAttribute(shape, alignment, stroke);
@@ -133,7 +133,7 @@ public class ShapeGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.ShapeGraphicAttribute.equals(Object)'
+     * Test method for 'com.google.code.appengine.awt.font.ShapeGraphicAttribute.equals(Object)'
      */
     public final void testEqualsObject() {
         sga = new ShapeGraphicAttribute(shape, alignment, stroke);
@@ -142,7 +142,7 @@ public class ShapeGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GraphicAttribute.getAlignment()'
+     * Test method for 'com.google.code.appengine.awt.font.GraphicAttribute.getAlignment()'
      */
     public final void testGetAlignment() {
         sga = new ShapeGraphicAttribute(shape, alignment, stroke);
@@ -150,7 +150,7 @@ public class ShapeGraphicAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GraphicAttribute.getJustificationInfo()'
+     * Test method for 'com.google.code.appengine.awt.font.GraphicAttribute.getJustificationInfo()'
      */
     public final void testGetJustificationInfo() {
         sga = new ShapeGraphicAttribute(shape, alignment, stroke);

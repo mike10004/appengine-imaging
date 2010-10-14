@@ -45,7 +45,7 @@ public class FontRenderContextTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.FontRenderContext.FontRenderContext(AffineTransform, boolean, boolean)'
+     * Test method for 'com.google.code.appengine.awt.font.FontRenderContext.FontRenderContext(AffineTransform, boolean, boolean)'
      */
     public final void testFontRenderContextAffineTransformBooleanBoolean() {
         
@@ -59,7 +59,7 @@ public class FontRenderContextTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.FontRenderContext.equals(Object)'
+     * Test method for 'com.google.code.appengine.awt.font.FontRenderContext.equals(Object)'
      */
     public final void testEqualsObject() {
         FontRenderContext frc1 = new FontRenderContext(at, isAA, usesFractionalMetrics);
@@ -67,14 +67,14 @@ public class FontRenderContextTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.FontRenderContext.getTransform()'
+     * Test method for 'com.google.code.appengine.awt.font.FontRenderContext.getTransform()'
      */
     public final void testGetTransform() {
         assertEquals(at, frc.getTransform());
     }
 
     /*
-     * Test method for 'java.nawt.font.FontRenderContext.equals(FontRenderContext)'
+     * Test method for 'com.google.code.appengine.awt.font.FontRenderContext.equals(FontRenderContext)'
      */
     public final void testEqualsFontRenderContext() {
         FontRenderContext frc1 = new FontRenderContext(at, isAA, usesFractionalMetrics);
@@ -82,14 +82,14 @@ public class FontRenderContextTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.FontRenderContext.usesFractionalMetrics()'
+     * Test method for 'com.google.code.appengine.awt.font.FontRenderContext.usesFractionalMetrics()'
      */
     public final void testUsesFractionalMetrics() {
         assertEquals(usesFractionalMetrics, frc.usesFractionalMetrics());
     }
 
     /*
-     * Test method for 'java.nawt.font.FontRenderContext.isAntiAliased()'
+     * Test method for 'com.google.code.appengine.awt.font.FontRenderContext.isAntiAliased()'
      */
     public final void testIsAntiAliased() {
         assertEquals(isAA, frc.isAntiAliased());

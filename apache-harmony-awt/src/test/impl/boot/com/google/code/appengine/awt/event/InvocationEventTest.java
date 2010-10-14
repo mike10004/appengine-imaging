@@ -129,13 +129,13 @@ public class InvocationEventTest extends TestCase {
         event = new InvocationEvent(button, InvocationEvent.INVOCATION_DEFAULT,
                 runnable, button, false);
 
-        assertTrue(event.paramString().startsWith("INVOCATION_DEFAULT,runnable=java.nawt.event.InvocationEventTest$"));
-        assertTrue(event.paramString().indexOf(",notifier=java.nawt.Button[") != -1);
+        assertTrue(event.paramString().startsWith("INVOCATION_DEFAULT,runnable=com.google.code.appengine.awt.event.InvocationEventTest$"));
+        assertTrue(event.paramString().indexOf(",notifier=com.google.code.appengine.awt.Button[") != -1);
         assertTrue(event.paramString().indexOf("],catchExceptions=false,when=") != -1);
 
         event = new InvocationEvent(button, InvocationEvent.INVOCATION_DEFAULT + 1024,
                 runnable, button, false);
-        assertTrue(event.paramString().startsWith("unknown type,runnable=java.nawt.event.InvocationEventTest$"));
+        assertTrue(event.paramString().startsWith("unknown type,runnable=com.google.code.appengine.awt.event.InvocationEventTest$"));
     }
 
 }

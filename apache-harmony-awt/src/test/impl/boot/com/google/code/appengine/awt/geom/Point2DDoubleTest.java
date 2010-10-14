@@ -66,7 +66,7 @@ public class Point2DDoubleTest extends TestCase {
     }
 
     public void testToString() {
-        assertEquals("java.nawt.geom.Point2D$Double[x=1.0,y=2.0]", p.toString());
+        assertEquals("com.google.code.appengine.awt.geom.Point2D$Double[x=1.0,y=2.0]", p.toString());
     }
 
     public static void main(String[] args) {

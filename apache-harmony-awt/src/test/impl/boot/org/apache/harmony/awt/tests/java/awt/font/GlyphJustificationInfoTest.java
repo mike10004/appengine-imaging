@@ -34,7 +34,7 @@ public class GlyphJustificationInfoTest extends TestCase {
 
 
     /*
-     * Test method for 'java.nawt.font.GlyphJustificationInfo.GlyphJustificationInfo(float, boolean, int, float, float, boolean, int, float, float)'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphJustificationInfo.GlyphJustificationInfo(float, boolean, int, float, float, boolean, int, float, float)'
      */
     public final void testGlyphJustificationInfo() {
         GlyphJustificationInfo gji = new GlyphJustificationInfo(weight, growAbsorb, 
@@ -54,7 +54,7 @@ public class GlyphJustificationInfoTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphJustificationInfo.GlyphJustificationInfo(float, boolean, int, float, float, boolean, int, float, float)'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphJustificationInfo.GlyphJustificationInfo(float, boolean, int, float, float, boolean, int, float, float)'
      */
     public final void testGlyphJustificationInfo_parametersCheck() {
         

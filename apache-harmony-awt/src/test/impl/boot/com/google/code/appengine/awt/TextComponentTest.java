@@ -69,7 +69,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.addNotify()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.addNotify()'
      */
     public void testAddNotify() {
         frame = new Frame();
@@ -83,7 +83,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.getAccessibleContext()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.getAccessibleContext()'
      */
     public void testGetAccessibleContext() {
         assertTrue(textComp.getAccessibleContext() instanceof 
@@ -91,7 +91,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.getBackground()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.getBackground()'
      */
     public void testGetBackground() {
         assertNull(textComp.getBackground());
@@ -108,7 +108,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.paramString()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.paramString()'
      */
     public void testParamString() {
         String paramStr = textComp.paramString();
@@ -119,7 +119,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.removeNotify()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.removeNotify()'
      */
     public void testRemoveNotify() {
         frame = new Frame();
@@ -132,7 +132,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.setBackground(Color)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.setBackground(Color)'
      */
     public void testSetBackground() {
         Color bkColor = Color.GREEN;
@@ -147,7 +147,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.processEvent(AWTEvent)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.processEvent(AWTEvent)'
      */
     public void testProcessEvent() {
         eventProcessed = false;
@@ -163,7 +163,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.getListeners(Class)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.getListeners(Class)'
      */
     public void testGetListeners() {
         Class<TextListener> cls = TextListener.class;
@@ -176,7 +176,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.enableInputMethods(boolean)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.enableInputMethods(boolean)'
      */
     public void testEnableInputMethods() {
         // TODO: write test when implemented
@@ -184,7 +184,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.TextComponent()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.TextComponent()'
      */
     public void testTextComponent() {
         assertNotNull(textComp);
@@ -192,7 +192,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.getText()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.getText()'
      */
     public void testGetText() {
         assertEquals("text is an empty string by default",
@@ -200,7 +200,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.getCaretPosition()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.getCaretPosition()'
      */
     public void testGetCaretPosition() {
         String text = "txt";
@@ -218,21 +218,21 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.getSelectedText()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.getSelectedText()'
      */
     public void testGetSelectedText() {
         assertEquals("empty string is selected", "", textComp.getSelectedText());
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.getSelectionEnd()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.getSelectionEnd()'
      */
     public void testGetSelectionEnd() {
         assertEquals("default selection end is 0", 0, textComp.getSelectionEnd());
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.getSelectionStart()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.getSelectionStart()'
      */
     public void testGetSelectionStart() {
         assertEquals("default selection start is 0", 0,
@@ -240,7 +240,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.isEditable()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.isEditable()'
      */
     public void testIsEditable() {
         assertTrue("editable by default", textComp.isEditable());
@@ -248,7 +248,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.select(int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.select(int, int)'
      */
     public void testSelect() {
         textComp.setText("First line of text.");
@@ -266,7 +266,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.selectAll()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.selectAll()'
      */
     public void testSelectAll() {
         String text = "Some text";
@@ -280,7 +280,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.setCaretPosition(int)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.setCaretPosition(int)'
      */
     public void testSetCaretPosition() {
         int pos = 5;
@@ -321,7 +321,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.setEditable(boolean)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.setEditable(boolean)'
      */
     public void testSetEditable() {
         textComp.setEditable(false);
@@ -332,7 +332,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.setSelectionEnd(int)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.setSelectionEnd(int)'
      */
     public void testSetSelectionEnd() {
         textComp.setText("This is some text.");
@@ -351,7 +351,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.setSelectionStart(int)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.setSelectionStart(int)'
      */
     public void testSetSelectionStart() {
         textComp.setText("This is some text.");
@@ -367,7 +367,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.setText(String)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.setText(String)'
      */
     public void testSetText() {
         String text = "Some text";
@@ -378,7 +378,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.addTextListener(TextListener)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.addTextListener(TextListener)'
      */
     public void testAddRemoveTextListener() {
         textComp.addTextListener(listener);
@@ -399,7 +399,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.getTextListeners()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.getTextListeners()'
      */
     public void testGetTextListeners() {
         TextListener[] listeners = textComp.getTextListeners();
@@ -410,7 +410,7 @@ public class TextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.processTextEvent(TextEvent)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.processTextEvent(TextEvent)'
      */
     public void testProcessTextEvent() {
         eventProcessed = false;

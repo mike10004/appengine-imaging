@@ -24,7 +24,7 @@ import com.google.code.appengine.awt.color.ICC_Profile;
 /**
  * Includes utility methods for reading ICC profile data.
  * Created to provide public access to ICC_Profile methods
- * for classes outside of java.nawt.color
+ * for classes outside of java.awt.color
  */
 public class ICC_ProfileHelper {
     /**

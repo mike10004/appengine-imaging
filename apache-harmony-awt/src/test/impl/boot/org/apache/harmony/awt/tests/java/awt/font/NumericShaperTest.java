@@ -58,7 +58,7 @@ public class NumericShaperTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.NumericShaper.equals(Object)'
+     * Test method for 'com.google.code.appengine.awt.font.NumericShaper.equals(Object)'
      */
     public final void testEqualsObject() {
         NumericShaper ns;
@@ -96,7 +96,7 @@ public class NumericShaperTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.NumericShaper.getContextualShaper(int, int)'
+     * Test method for 'com.google.code.appengine.awt.font.NumericShaper.getContextualShaper(int, int)'
      */
     public final void testGetContextualShaperIntInt() {
         NumericShaper ns;
@@ -116,7 +116,7 @@ public class NumericShaperTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.NumericShaper.getContextualShaper(int)'
+     * Test method for 'com.google.code.appengine.awt.font.NumericShaper.getContextualShaper(int)'
      */
     public final void testGetContextualShaperInt() {
         NumericShaper ns;
@@ -137,7 +137,7 @@ public class NumericShaperTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.NumericShaper.getRanges()'
+     * Test method for 'com.google.code.appengine.awt.font.NumericShaper.getRanges()'
      */
     public final void testGetRanges() {
         NumericShaper ns;
@@ -153,7 +153,7 @@ public class NumericShaperTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.NumericShaper.getShaper(int)'
+     * Test method for 'com.google.code.appengine.awt.font.NumericShaper.getShaper(int)'
      */
     public final void testGetShaper() {
         NumericShaper ns;
@@ -172,7 +172,7 @@ public class NumericShaperTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.NumericShaper.isContextual()'
+     * Test method for 'com.google.code.appengine.awt.font.NumericShaper.isContextual()'
      */
     public final void testIsContextual() {
         NumericShaper ns;
@@ -191,7 +191,7 @@ public class NumericShaperTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.NumericShaper.shape(char[], int, int, int)'
+     * Test method for 'com.google.code.appengine.awt.font.NumericShaper.shape(char[], int, int, int)'
      */
     public final void testShapeCharArrayIntIntInt() {
         NumericShaper ns;
@@ -250,7 +250,7 @@ public class NumericShaperTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.NumericShaper.shape(char[], int, int)'
+     * Test method for 'com.google.code.appengine.awt.font.NumericShaper.shape(char[], int, int)'
      */
     public final void testShapeCharArrayIntInt() {
         NumericShaper ns;
@@ -358,7 +358,7 @@ public class NumericShaperTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.NumericShaper.shape(char[], int, int)' with 
+     * Test method for 'com.google.code.appengine.awt.font.NumericShaper.shape(char[], int, int)' with 
      * illegal parameters.
      */
     public final void testShapeCharArrayIntInt_IllegalArguments() {
@@ -403,7 +403,7 @@ public class NumericShaperTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.NumericShaper.shape(char[], int, int, int)' with 
+     * Test method for 'com.google.code.appengine.awt.font.NumericShaper.shape(char[], int, int, int)' with 
      * illegal parameters. 
      */
     public final void testShapeCharArrayIntIntInt_IllegalArguments() {

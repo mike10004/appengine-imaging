@@ -28,7 +28,7 @@ public class GlyphMetricsTest extends TestCase {
     byte glyphType = GlyphMetrics.COMPONENT;
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.GlyphMetrics(boolean, float, float, Rectangle2D, byte)'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.GlyphMetrics(boolean, float, float, Rectangle2D, byte)'
      */
     public final void testGlyphMetricsBooleanFloatFloatRectangle2DByte() {
         boolean horizontal = false;
@@ -43,7 +43,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.GlyphMetrics(float, Rectangle2D, byte)'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.GlyphMetrics(float, Rectangle2D, byte)'
      */
     public final void testGlyphMetricsFloatRectangle2DByte() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, glyphType);
@@ -53,7 +53,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.getBounds2D()'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.getBounds2D()'
      */
     public final void testGetBounds2D() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, GlyphMetrics.LIGATURE);
@@ -62,7 +62,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.isWhitespace()'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.isWhitespace()'
      */
     public final void testIsWhitespace() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, GlyphMetrics.WHITESPACE);
@@ -73,7 +73,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.isStandard()'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.isStandard()'
      */
     public final void testIsStandard() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, GlyphMetrics.STANDARD);
@@ -84,7 +84,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.isLigature()'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.isLigature()'
      */
     public final void testIsLigature() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, GlyphMetrics.LIGATURE);
@@ -95,7 +95,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.isComponent()'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.isComponent()'
      */
     public final void testIsComponent() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, GlyphMetrics.COMPONENT);
@@ -106,7 +106,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.isCombining()'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.isCombining()'
      */
     public final void testIsCombining() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, GlyphMetrics.COMBINING);
@@ -117,7 +117,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.getType()'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.getType()'
      */
     public final void testGetType() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, glyphType);
@@ -125,7 +125,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.getRSB()'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.getRSB()'
      */
     public final void testGetRSB() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, glyphType);
@@ -139,7 +139,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.getLSB()'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.getLSB()'
      */
     public final void testGetLSB() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, glyphType);
@@ -153,7 +153,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.getAdvanceY()'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.getAdvanceY()'
      */
     public final void testGetAdvanceY() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, glyphType);
@@ -165,7 +165,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.getAdvanceX()'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.getAdvanceX()'
      */
     public final void testGetAdvanceX() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, glyphType);
@@ -177,7 +177,7 @@ public class GlyphMetricsTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.GlyphMetrics.getAdvance()'
+     * Test method for 'com.google.code.appengine.awt.font.GlyphMetrics.getAdvance()'
      */
     public final void testGetAdvance() {
         GlyphMetrics gm = new GlyphMetrics(advance, bounds, glyphType);

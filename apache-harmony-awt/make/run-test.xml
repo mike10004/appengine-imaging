@@ -47,7 +47,7 @@
         <!-- headless tests -->
         <run-hdk-tests module="awt" jar="awt_headless_tests.jar">
             <junit-elements>
-                <jvmarg value="-Djava.nawt.headless=true"/>
+                <jvmarg value="-Djava.awt.headless=true"/>
                 <jvmarg value="-Xbootclasspath/a:awt_boot_tests.jar${path.separator}../junit.jar"/>
             </junit-elements>
         </run-hdk-tests>

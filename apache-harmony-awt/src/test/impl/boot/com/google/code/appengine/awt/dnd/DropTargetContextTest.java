@@ -35,7 +35,7 @@ import com.google.code.appengine.awt.dnd.peer.DropTargetContextPeer;
 import junit.framework.TestCase;
 
 /**
- * Unit test for class java.nawt.dnd.DropTargetContext
+ * Unit test for class com.google.code.appengine.awt.dnd.DropTargetContext
  */
 public class DropTargetContextTest extends TestCase {
     

@@ -34,7 +34,7 @@ public interface SystemProperties {
 
     /**
      * Get current value of a system color
-     * @param index - one of java.nawt.SystemColor constants
+     * @param index - one of com.google.code.appengine.awt.SystemColor constants
      * @return ARGB value of requested system color
      */
     int getSystemColorARGB(int index);
@@ -54,7 +54,7 @@ public interface SystemProperties {
      * Fills the given map with system-dependent visual text
      * attributes for the abstract description 
      * of the given input method highlight
-     * @see java.nawt.Toolkit.mapInputMethodHighlight()
+     * @see com.google.code.appengine.awt.Toolkit.mapInputMethodHighlight()
      */
     void mapInputMethodHighlight(InputMethodHighlight highlight, Map<TextAttribute, ?> map);
 }

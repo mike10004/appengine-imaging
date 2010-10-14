@@ -190,13 +190,13 @@ public abstract class ComponentInternals {
     
     /**
      * Makes it possible to call protected Toolkit.setDesktopProperty()
-     * method from any class outside of java.nawt package
+     * method from any class outside of com.google.code.appengine.awt package
      */
     public abstract void setDesktopProperty(String name, Object value);
     
     /**
      * Makes it possible to start/stop dialog modal loop
-     * from anywhere outside of java.nawt package
+     * from anywhere outside of com.google.code.appengine.awt package
      */
     public abstract void runModalLoop(Dialog dlg);
     public abstract void endModalLoop(Dialog dlg);

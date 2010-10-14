@@ -46,14 +46,14 @@ public class AccessibleAWTTextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getAccessibleRole()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getAccessibleRole()'
      */
     public void testGetAccessibleRole() {
         assertSame(AccessibleRole.TEXT, aTextComp.getAccessibleRole());
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getAccessibleStateSet()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getAccessibleStateSet()'
      */
     public void testGetAccessibleStateSet() {
         AccessibleState state = AccessibleState.EDITABLE;
@@ -68,14 +68,14 @@ public class AccessibleAWTTextComponentTest extends TestCase {
         assertSame(aTextComp, aTextComp.getAccessibleText());
     }
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.AccessibleAWTTextComponent(TextComponent)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.AccessibleAWTTextComponent(TextComponent)'
      */
     public void testAccessibleAWTTextComponent() {
         assertSame(aTextComp, textComp.getTextListeners()[0]);
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getCaretPosition()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getCaretPosition()'
      */
     public void testGetCaretPosition() {
         assertEquals(0, aTextComp.getCaretPosition());
@@ -89,7 +89,7 @@ public class AccessibleAWTTextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getCharCount()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getCharCount()'
      */
     public void testGetCharCount() {
         assertEquals(0, aTextComp.getCharCount());
@@ -101,7 +101,7 @@ public class AccessibleAWTTextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getSelectionEnd()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getSelectionEnd()'
      */
     public void testGetSelectionEnd() {
         assertEquals(0, aTextComp.getSelectionEnd());
@@ -113,7 +113,7 @@ public class AccessibleAWTTextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getSelectionStart()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getSelectionStart()'
      */
     public void testGetSelectionStart() {
         assertEquals(0, aTextComp.getSelectionStart());
@@ -125,21 +125,21 @@ public class AccessibleAWTTextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getIndexAtPoint(Point)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getIndexAtPoint(Point)'
      */
     public void testGetIndexAtPoint() {
         assertEquals(-1, aTextComp.getIndexAtPoint(new Point()));
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getCharacterBounds(int)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getCharacterBounds(int)'
      */
     public void testGetCharacterBounds() {
         assertNull(aTextComp.getCharacterBounds(0));
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getSelectedText()'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getSelectedText()'
      */
     public void testGetSelectedText() {
         assertNull(aTextComp.getSelectedText());
@@ -153,7 +153,7 @@ public class AccessibleAWTTextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getAfterIndex(int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getAfterIndex(int, int)'
      */
     public void testGetAfterIndex() {
         assertNull(aTextComp.getAfterIndex(AccessibleText.WORD, 5));
@@ -165,7 +165,7 @@ public class AccessibleAWTTextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getAtIndex(int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getAtIndex(int, int)'
      */
     public void testGetAtIndex() {
         assertNull(aTextComp.getAtIndex(AccessibleText.CHARACTER, 0));
@@ -176,7 +176,7 @@ public class AccessibleAWTTextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getBeforeIndex(int, int)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getBeforeIndex(int, int)'
      */
     public void testGetBeforeIndex() {
         assertNull(aTextComp.getAtIndex(AccessibleText.SENTENCE, 1));
@@ -190,14 +190,14 @@ public class AccessibleAWTTextComponentTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.getCharacterAttribute(int)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.getCharacterAttribute(int)'
      */
     public void testGetCharacterAttribute() {
         assertNull(aTextComp.getCharacterAttribute(0));
     }
 
     /*
-     * Test method for 'java.nawt.TextComponent.AccessibleAWTTextComponent.textValueChanged(TextEvent)'
+     * Test method for 'com.google.code.appengine.awt.TextComponent.AccessibleAWTTextComponent.textValueChanged(TextEvent)'
      */
     public void testTextValueChanged() {
         // nothing to check...

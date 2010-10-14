@@ -39,7 +39,7 @@ public class TransformAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.TransformAttribute.TransformAttribute(AffineTransform)'
+     * Test method for 'com.google.code.appengine.awt.font.TransformAttribute.TransformAttribute(AffineTransform)'
      */
     public final void testTransformAttribute() {
         TransformAttribute ta;
@@ -60,7 +60,7 @@ public class TransformAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.TransformAttribute.getTransform()'
+     * Test method for 'com.google.code.appengine.awt.font.TransformAttribute.getTransform()'
      */
     public final void testGetTransform() {
         AffineTransform at = AffineTransform.getRotateInstance(1);
@@ -69,7 +69,7 @@ public class TransformAttributeTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.font.TransformAttribute.isIdentity()'
+     * Test method for 'com.google.code.appengine.awt.font.TransformAttribute.isIdentity()'
      */
     public final void testIsIdentity() {
         TransformAttribute ta = new TransformAttribute(new AffineTransform());

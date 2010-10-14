@@ -34,8 +34,8 @@ import com.google.code.appengine.awt.image.IndexColorModel;
 
 /**
  * This class give an opportunity to get access to private data of 
- * some java.nawt.image classes 
- * Implementation of this class placed in java.nawt.image package
+ * some java.awt.image classes 
+ * Implementation of this class placed in java.awt.image package
  */
 
 public abstract class AwtImageBackdoorAccessor {

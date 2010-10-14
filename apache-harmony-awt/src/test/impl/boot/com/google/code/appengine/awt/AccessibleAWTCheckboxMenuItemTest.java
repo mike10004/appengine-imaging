@@ -48,63 +48,63 @@ public class AccessibleAWTCheckboxMenuItemTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getAccessibleAction()'
+     * Test method for 'com.google.code.appengine.awt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getAccessibleAction()'
      */
     public void testGetAccessibleAction() {
         assertSame(ac, ac.getAccessibleAction());
     }
 
     /*
-     * Test method for 'java.nawt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getAccessibleRole()'
+     * Test method for 'com.google.code.appengine.awt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getAccessibleRole()'
      */
     public void testGetAccessibleRole() {
         assertSame(AccessibleRole.CHECK_BOX, ac.getAccessibleRole());
     }
 
     /*
-     * Test method for 'java.nawt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getAccessibleValue()'
+     * Test method for 'com.google.code.appengine.awt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getAccessibleValue()'
      */
     public void testGetAccessibleValue() {
         assertSame(ac, ac.getAccessibleValue());
     }
 
     /*
-     * Test method for 'java.nawt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getAccessibleActionCount()'
+     * Test method for 'com.google.code.appengine.awt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getAccessibleActionCount()'
      */
     public void testGetAccessibleActionCount() {
         assertEquals(0, action.getAccessibleActionCount());
     }
 
     /*
-     * Test method for 'java.nawt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.doAccessibleAction(int)'
+     * Test method for 'com.google.code.appengine.awt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.doAccessibleAction(int)'
      */
     public void testDoAccessibleAction() {
         assertFalse(action.doAccessibleAction(0));
     }
 
     /*
-     * Test method for 'java.nawt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getCurrentAccessibleValue()'
+     * Test method for 'com.google.code.appengine.awt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getCurrentAccessibleValue()'
      */
     public void testGetCurrentAccessibleValue() {
         assertNull(value.getCurrentAccessibleValue());
     }
 
     /*
-     * Test method for 'java.nawt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getMaximumAccessibleValue()'
+     * Test method for 'com.google.code.appengine.awt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getMaximumAccessibleValue()'
      */
     public void testGetMaximumAccessibleValue() {
         assertNull(value.getMaximumAccessibleValue());
     }
 
     /*
-     * Test method for 'java.nawt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getMinimumAccessibleValue()'
+     * Test method for 'com.google.code.appengine.awt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getMinimumAccessibleValue()'
      */
     public void testGetMinimumAccessibleValue() {
         assertNull(value.getMaximumAccessibleValue());
     }
 
     /*
-     * Test method for 'java.nawt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.setCurrentAccessibleValue(Number)'
+     * Test method for 'com.google.code.appengine.awt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.setCurrentAccessibleValue(Number)'
      */
     public void testSetCurrentAccessibleValue() {
         assertFalse(value.setCurrentAccessibleValue(null));
@@ -112,7 +112,7 @@ public class AccessibleAWTCheckboxMenuItemTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getAccessibleActionDescription(int)'
+     * Test method for 'com.google.code.appengine.awt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.getAccessibleActionDescription(int)'
      */
     public void testGetAccessibleActionDescription() {
         assertNull(action.getAccessibleActionDescription(0));
@@ -120,7 +120,7 @@ public class AccessibleAWTCheckboxMenuItemTest extends TestCase {
     }
 
     /*
-     * Test method for 'java.nawt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.AccessibleAWTCheckboxMenuItem(CheckboxMenuItem)'
+     * Test method for 'com.google.code.appengine.awt.CheckboxMenuItem.AccessibleAWTCheckboxMenuItem.AccessibleAWTCheckboxMenuItem(CheckboxMenuItem)'
      */
     public void testAccessibleAWTCheckboxMenuItem() {
         assertTrue(ac instanceof AccessibleAWTCheckboxMenuItem);

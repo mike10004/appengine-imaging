@@ -79,15 +79,15 @@ public class FlowLayoutTest extends AWTTestCase {
 
     public final void testToString() {
         layout = new FlowLayout(FlowLayout.LEADING, 10, 20);
-        assertTrue(new String("java.nawt.FlowLayout[hgap=10,vgap=20,align=leading]").equals(layout.toString()));
+        assertTrue(new String("com.google.code.appengine.awt.FlowLayout[hgap=10,vgap=20,align=leading]").equals(layout.toString()));
         layout = new FlowLayout(FlowLayout.LEFT, 0, 0);
-        assertTrue(new String("java.nawt.FlowLayout[hgap=0,vgap=0,align=left]").equals(layout.toString()));
+        assertTrue(new String("com.google.code.appengine.awt.FlowLayout[hgap=0,vgap=0,align=left]").equals(layout.toString()));
         layout = new FlowLayout(FlowLayout.RIGHT, 0, 0);
-        assertTrue(new String("java.nawt.FlowLayout[hgap=0,vgap=0,align=right]").equals(layout.toString()));
+        assertTrue(new String("com.google.code.appengine.awt.FlowLayout[hgap=0,vgap=0,align=right]").equals(layout.toString()));
         layout = new FlowLayout(FlowLayout.TRAILING, 0, 0);
-        assertTrue(new String("java.nawt.FlowLayout[hgap=0,vgap=0,align=trailing]").equals(layout.toString()));
+        assertTrue(new String("com.google.code.appengine.awt.FlowLayout[hgap=0,vgap=0,align=trailing]").equals(layout.toString()));
         layout = new FlowLayout(FlowLayout.CENTER, 0, 0);
-        assertTrue(new String("java.nawt.FlowLayout[hgap=0,vgap=0,align=center]").equals(layout.toString()));
+        assertTrue(new String("com.google.code.appengine.awt.FlowLayout[hgap=0,vgap=0,align=center]").equals(layout.toString()));
     }
 
     public final void testFlowLayoutint() {

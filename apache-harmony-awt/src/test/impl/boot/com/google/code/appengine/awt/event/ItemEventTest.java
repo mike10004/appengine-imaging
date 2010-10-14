@@ -50,11 +50,11 @@ public class ItemEventTest extends TestCase {
     public final void testParamString() {
         ItemEvent event = new ItemEvent(item, ItemEvent.ITEM_STATE_CHANGED, item, ItemEvent.SELECTED);
 
-        assertTrue(event.paramString().startsWith("ITEM_STATE_CHANGED,item=java.nawt.event.ItemEventTest"));
+        assertTrue(event.paramString().startsWith("ITEM_STATE_CHANGED,item=com.google.code.appengine.awt.event.ItemEventTest"));
         assertTrue(event.paramString().endsWith(",stateChange=SELECTED"));
 
         event = new ItemEvent(item, ItemEvent.ITEM_STATE_CHANGED + 1024, item, ItemEvent.SELECTED + 1024);
-        assertTrue(event.paramString().startsWith("unknown type,item=java.nawt.event.ItemEventTest"));
+        assertTrue(event.paramString().startsWith("unknown type,item=com.google.code.appengine.awt.event.ItemEventTest"));
         assertTrue(event.paramString().endsWith(",stateChange=unknown type"));
     }
 

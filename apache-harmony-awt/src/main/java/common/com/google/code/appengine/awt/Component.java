@@ -962,8 +962,8 @@ public abstract class Component implements ImageObserver, MenuContainer, Seriali
                 for (Class<?> c = thisClass; c != Component.class; c = c.getSuperclass()) {
                     try {
                         coalesceMethod = c.getDeclaredMethod("coalesceEvents", new Class[] { //$NON-NLS-1$
-                                Class.forName("java.nawt.AWTEvent"), //$NON-NLS-1$
-                                Class.forName("java.nawt.AWTEvent") }); //$NON-NLS-1$
+                                Class.forName("java.awt.AWTEvent"), //$NON-NLS-1$
+                                Class.forName("java.awt.AWTEvent") }); //$NON-NLS-1$
                     } catch (Exception e) {
                     }
                     if (coalesceMethod != null) {

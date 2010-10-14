@@ -23,7 +23,7 @@ import com.google.code.appengine.awt.Point;
 
 /**
  * The interface provides access to platform dependent functionality
- * for classes java.nawt.PointerInfo & java.nawt.MouseInfo.
+ * for classes com.google.code.appengine.awt.PointerInfo & com.google.code.appengine.awt.MouseInfo.
  */
 public interface NativeMouseInfo {
 

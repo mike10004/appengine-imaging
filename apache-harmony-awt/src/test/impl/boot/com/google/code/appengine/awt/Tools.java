@@ -120,7 +120,7 @@ public abstract class Tools {
                     g.setColor(Color.black);
                     ((Graphics2D)g).draw(shape);
 
-//                    java.nawt.image.BufferedImage img = Shape.createImage(shape, null, Color.gray, Color.lightGray);
+//                    com.google.code.appengine.awt.image.BufferedImage img = Shape.createImage(shape, null, Color.gray, Color.lightGray);
 //                    g.drawImage(img, 0, 0, img.getWidth(), img.getHeight(), null);
                 }
                 

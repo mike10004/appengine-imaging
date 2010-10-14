@@ -32,7 +32,7 @@ public class FLTextRenderer extends TextRenderer {
     }
 
     /* (non-Javadoc)
-     * @see org.apache.harmony.awt.gl.TextRenderer#drawString(java.nawt.Graphics2D, java.lang.String, float, float)
+     * @see org.apache.harmony.awt.gl.TextRenderer#drawString(java.awt.Graphics2D, java.lang.String, float, float)
      */
     @Override
     public void drawString(Graphics2D g2d, String str, float x, float y) {
@@ -40,7 +40,7 @@ public class FLTextRenderer extends TextRenderer {
     }
 
     /* (non-Javadoc)
-     * @see org.apache.harmony.awt.gl.TextRenderer#drawGlyphVector(java.nawt.Graphics2D, java.nawt.font.GlyphVector, float, float)
+     * @see org.apache.harmony.awt.gl.TextRenderer#drawGlyphVector(java.awt.Graphics2D, java.awt.font.GlyphVector, float, float)
      */
     @Override
     public void drawGlyphVector(Graphics2D g2d, GlyphVector gv, float x, float y) {

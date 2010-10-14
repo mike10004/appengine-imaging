@@ -166,7 +166,7 @@ public class InputMethodEventTest extends TestCase {
                 InputMethodEvent.INPUT_METHOD_TEXT_CHANGED, 1000000000,
                 text, 0, null, null);
 
-        assertTrue(event.paramString().indexOf("INPUT_METHOD_TEXT_CHANGED,text=java.nawt.event.InputMethodEventTest") != -1);
+        assertTrue(event.paramString().indexOf("INPUT_METHOD_TEXT_CHANGED,text=com.google.code.appengine.awt.event.InputMethodEventTest") != -1);
         assertTrue(event.paramString().indexOf(",commitedCharCount=0,caret=null,visiblePosition=null") != -1);
     }
 

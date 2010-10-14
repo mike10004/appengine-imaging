@@ -100,7 +100,7 @@ public abstract class NativeEvent {
     /**
      * Returns cross-platform event id
      * should be one of ID_* constants or
-     * id constants from java.nawt.AWTEvent subclasess
+     * id constants from com.google.code.appengine.awt.AWTEvent subclasess
      * @return cross-platform event id
      */
     public int getEventId() {
@@ -137,11 +137,11 @@ public abstract class NativeEvent {
      * Returns the state of keyboard and mouse buttons when the event
      * occured if event from mouse or keyboard, for other events can
      * return junk values. The value is bitwise OR of
-     * java.nawt.event.InputEvent *_DOWN constants.
+     * com.google.code.appengine.awt.event.InputEvent *_DOWN constants.
      *
      * Method is aware of system mouse button swap for left-hand
      * mouse and return swapped values.
-     * @return bitwise OR of java.nawt.event.InputEvent *_DOWN constants
+     * @return bitwise OR of com.google.code.appengine.awt.event.InputEvent *_DOWN constants
      */
     public int getInputModifiers() {
         return modifiers;
@@ -159,16 +159,16 @@ public abstract class NativeEvent {
     }
 
     /**
-     * The same meaning as java.nawt.event.getKeyCode
-     * @return java.nawt.event VK_* constant
+     * The same meaning as com.google.code.appengine.awt.event.getKeyCode
+     * @return com.google.code.appengine.awt.event VK_* constant
      */
     public int getVKey() {
         return (keyInfo != null) ? keyInfo.vKey : KeyInfo.DEFAULT_VKEY;
     }
 
     /**
-     * The same meaning as java.nawt.event.getKeyLocation
-     * @return java.nawt.event KEY_LOCATION_* constant
+     * The same meaning as com.google.code.appengine.awt.event.getKeyLocation
+     * @return com.google.code.appengine.awt.event KEY_LOCATION_* constant
      */
     public int getKeyLocation() {
         return (keyInfo != null) ? keyInfo.keyLocation : KeyInfo.DEFAULT_LOCATION;
@@ -248,7 +248,7 @@ public abstract class NativeEvent {
      * Returns the window insets. Insets is area which belongs to
      * window somehow but is outside of it's client area,
      * it usually contains system provided border and titlebar.
-     * @return non-null java.nawt.Insets
+     * @return non-null com.google.code.appengine.awt.Insets
      */
     public abstract Insets getInsets();
 
