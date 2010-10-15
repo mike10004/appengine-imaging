@@ -1,0 +1,90 @@
+# Test merging stuff
+RectListManger rlm1-1
+rect  0  0 30 30
+rect 10 10 30 30
+rect 20 20 30 30
+rect 30 30 30 30
+rect 40 40 30 30
+merge 0 0
+print
+
+RectListManger rlm2-1
+rect  0  0 30 30
+rect 20 20 30 30
+rect 40 40 30 30
+# Should not collapse (overhead not high enough)
+merge 0 0
+print
+# Should not collapse (overhead not high enough)
+merge 400 0
+print
+# Should collapse (overhead high enough)
+merge 700 0
+print
+
+RectListManger rlm3-1
+rect  0 40 30 30
+rect 20 20 30 30
+rect 40  0 30 30
+# Should not collapse (overhead not high enough)
+merge 0 0
+print
+# Should not collapse (overhead not high enough)
+merge 400 0
+print
+# Should collapse (overhead high enough)
+merge 700 0
+print
+
+RectListManger rlm4-1
+rect  0  0 30 30
+rect 40  0 30 30
+# Should not collapse (overhead not high enough)
+merge 0 0
+print
+# Should collapse (overhead high enough)
+merge 400 0
+print
+
+RectListManger rlm5-1
+rect  0  0 30 30
+rect 40  0 30 30
+# Should collapse (line overhead high enough)
+merge 0 11
+print
+
+RectListManger rlm6-1
+rect  0  0  30 30
+rect  0 40 30 30
+# Should not collapse (overhead not high enough)
+merge 0 0
+print
+# Should collapse (overhead high enough)
+merge 400 0
+print
+
+RectListManger rlm7-1
+rect  0  0 30 30
+rect  0 40 30 30
+# Should not collapse (line overhead does affect)
+merge 0 11
+print
+# Should not collapse (line overhead affects merged)
+merge 400 11
+print
+# Should collapse (overhead overcomes)
+merge 440 11
+print
+
+# This reproduces a bug in the original merge code.
+# The tricky bit is that Rect 1 & 2 won't merge but
+# rects 1 & 4 will the result will merge with 2.
+# This caused an infinate loop.
+RectListManger rlm8-1
+rect  194 218   1  1
+rect  200  10   1  1
+rect  226 246   1  1
+rect  227 228   1  1
+print
+merge 1000 10
+print
