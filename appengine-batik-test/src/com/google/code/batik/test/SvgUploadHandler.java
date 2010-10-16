@@ -33,13 +33,13 @@ public class SvgUploadHandler extends HttpServlet
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException
 	{
+		BlobstoreService bs = BlobstoreServiceFactory.getBlobstoreService();
+		Map<String, BlobKey> blobs = bs.getUploadedBlobs(req);
+		BlobKey blob = blobs.get("aFile");
+
+	    log.log(Level.INFO, String.format("Got an svg upload: %s", blob));
+	    
 		try {
-			BlobstoreService bs = BlobstoreServiceFactory.getBlobstoreService();
-			Map<String, BlobKey> blobs = bs.getUploadedBlobs(req);
-			BlobKey blob = blobs.get("aFile");
-	        
-	        log.log(Level.INFO, String.format("Got an svg upload: %s", blob));
-			
 			// Transcode the svg doc
 			BlobstoreInputStream blobStream = new BlobstoreInputStream(blob);
 	        TranscoderInput input = new TranscoderInput(blobStream);
@@ -75,6 +75,10 @@ public class SvgUploadHandler extends HttpServlet
 		catch (Exception e) {
 			log.log(Level.INFO, e.getMessage());
 			resp.sendRedirect("/?error");
+		}
+		finally {
+			if (blob != null)
+				bs.delete(blob);
 		}
 	}
 	
