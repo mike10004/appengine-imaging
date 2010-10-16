@@ -32,7 +32,7 @@ import java.lang.ref.PhantomReference;
  * @author <a href="mailto:deweese@apache.org">l449433</a>
  * @version $Id: CleanerThread.java 591551 2007-11-03 04:52:47Z cam $
  */
-public class CleanerThread extends Thread {
+public class CleanerThread /*extends Thread*/ {
 
     static volatile ReferenceQueue queue = null;
     static CleanerThread  thread = null;
@@ -93,9 +93,9 @@ public class CleanerThread extends Thread {
     }
 
     protected CleanerThread() {
-        super("Batik CleanerThread");
-        setDaemon(true);
-        start();
+//        super("Batik CleanerThread");
+//        setDaemon(true);
+//        start();
     }
 
     public void run() {
