@@ -47,7 +47,8 @@ public class EventQueue {
     }
 
     public static boolean isDispatchThread() {
-        return Thread.currentThread() instanceof EventDispatchThread;
+    	return true;
+//        return Thread.currentThread() instanceof EventDispatchThread;
     }
 
     public static void invokeLater(Runnable runnable) {
@@ -81,10 +82,10 @@ public class EventQueue {
     }
 
     private static EventQueue getSystemEventQueue() {
-        Thread th = Thread.currentThread();
-        if (th instanceof EventDispatchThread) {
-            return ((EventDispatchThread)th).toolkit.getSystemEventQueueImpl();
-        }
+//        Thread th = Thread.currentThread();
+//        if (th instanceof EventDispatchThread) {
+//            return ((EventDispatchThread)th).toolkit.getSystemEventQueueImpl();
+//        }
         return null;
     }
     

@@ -23,7 +23,7 @@ package org.apache.harmony.awt.wtk;
 /**
  * NativeEventThread
  */
-public class NativeEventThread extends Thread {
+public class NativeEventThread /*extends Thread*/ {
     
     public interface Init {
         WTK init();
@@ -35,11 +35,11 @@ public class NativeEventThread extends Thread {
     private WTK wtk;
     
     public NativeEventThread() {
-        super("AWT-NativeEventThread"); //$NON-NLS-1$
-        setDaemon(true);
+//        super("AWT-NativeEventThread"); //$NON-NLS-1$
+//        setDaemon(true);
     }
 
-    @Override
+//    @Override
     public void run() {
         synchronized (this) {
             try {
@@ -50,7 +50,7 @@ public class NativeEventThread extends Thread {
             }
         }
         
-        runModalLoop();
+//        runModalLoop();
     }
 
     void runModalLoop() {
@@ -62,12 +62,13 @@ public class NativeEventThread extends Thread {
     public void start(Init init) {
         synchronized (this) {
             this.init = init;
-            super.start();
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+            run();
+//            super.start();
+//            try {
+//                wait();
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
         }
     }
     

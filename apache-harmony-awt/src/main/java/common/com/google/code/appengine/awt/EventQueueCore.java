@@ -82,7 +82,7 @@ final class EventQueueCore {
         toolkit = t;
         if (toolkit != null) {
             toolkit.setSystemEventQueueCore(this);
-            dispatchThread = toolkit.dispatchThread;
+//            dispatchThread = toolkit.dispatchThread;
         }
     }
 

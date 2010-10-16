@@ -28,7 +28,7 @@ import com.google.code.appengine.awt.EventQueue;
 import com.google.code.appengine.awt.Toolkit;
 
 
-class EventDispatchThread extends Thread  {
+class EventDispatchThread /*extends Thread*/  {
     
     private static final class MarkerEvent extends AWTEvent {
         private static final long serialVersionUID = 1L;
@@ -47,16 +47,16 @@ class EventDispatchThread extends Thread  {
     /**
      * Initialise and run the main event loop
      */
-    @Override
-    public void run() {
-        nativeQueue = toolkit.getNativeEventQueue();
-
-        try {
-            runModalLoop(null);
-        } finally {
-            toolkit.shutdownWatchdog.forceShutdown();
-        }
-    }
+//    @Override
+//    public void run() {
+//        nativeQueue = toolkit.getNativeEventQueue();
+//
+//        try {
+//            runModalLoop(null);
+//        } finally {
+//            toolkit.shutdownWatchdog.forceShutdown();
+//        }
+//    }
 
     void runModalLoop(ModalContext context) {
         long lastPaintTime = System.currentTimeMillis();
@@ -118,8 +118,8 @@ class EventDispatchThread extends Thread  {
     EventDispatchThread(Toolkit toolkit, Dispatcher dispatcher ) {
         this.toolkit = toolkit;
         this.dispatcher = dispatcher;
-        setName("AWT-EventDispatchThread"); //$NON-NLS-1$
-        setDaemon(true);
+//        setName("AWT-EventDispatchThread"); //$NON-NLS-1$
+//        setDaemon(true);
     }
 
 }

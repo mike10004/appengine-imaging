@@ -290,7 +290,7 @@ final class HeadlessToolkit extends ToolkitImpl {
             awtEventsManager = new AWTEventsManager();
             dispatchThread = new HeadlessEventDispatchThread(this, dispatcher);            
             dtk = DTK.getDTK();
-            dispatchThread.start();            
+//            dispatchThread.start();
         } finally {
             unlockAWT();
         }

@@ -22,37 +22,37 @@ package org.apache.harmony.awt.datatransfer;
 /**
  * Thread for handling data transfer native events
  */
-public class DataTransferThread extends Thread {
+public class DataTransferThread /*extends Thread*/ {
     
     private final DTK dtk;
 
     public DataTransferThread(DTK dtk) {
-        super("AWT-DataTransferThread"); //$NON-NLS-1$
-        setDaemon(true);
+//        super("AWT-DataTransferThread"); //$NON-NLS-1$
+//        setDaemon(true);
         this.dtk = dtk;
     }
     
-    @Override
-    public void run() {
-        synchronized (this) {
-            try {
-                dtk.initDragAndDrop();
-            } finally {
-                notifyAll();
-            }
-        }
-        dtk.runEventLoop();
-    }
+//    @Override
+//    public void run() {
+//        synchronized (this) {
+//            try {
+//                dtk.initDragAndDrop();
+//            } finally {
+//                notifyAll();
+//            }
+//        }
+//        dtk.runEventLoop();
+//    }
     
-    @Override
+//    @Override
     public void start() {
-        synchronized (this) {
-            super.start();
-            try {
-                wait();
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-        }
+//        synchronized (this) {
+//            super.start();
+//            try {
+//                wait();
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
     }
 }

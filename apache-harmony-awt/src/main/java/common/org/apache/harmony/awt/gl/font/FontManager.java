@@ -214,12 +214,12 @@ public abstract class FontManager {
              * Creating and registering shutdown hook to free resources
              * before object is destroyed.
              */
-            AccessController.doPrivileged(new PrivilegedAction<Object>() {
-                public Object run() {
-                    Runtime.getRuntime().addShutdownHook(new DisposeNativeHook());
-                    return null;
-                }
-            });
+//            AccessController.doPrivileged(new PrivilegedAction<Object>() {
+//                public Object run() {
+//                    Runtime.getRuntime().addShutdownHook(new DisposeNativeHook());
+//                    return null;
+//                }
+//            });
         }
     }
 
@@ -532,29 +532,29 @@ public abstract class FontManager {
      * Freeing native resources. This hook is used to avoid 
      * sudden application exit and to free resources created in native code.
      */
-    private class DisposeNativeHook extends Thread {
-
-        @Override
-        public void run() {
-            try{
-                /* Disposing native font peer's resources */
-                Enumeration<String> kEnum = fontsTable.keys();
-
-                while(kEnum.hasMoreElements()){
-                    Object key = kEnum.nextElement();
-                    HashMapReference hmr = fontsTable.remove(key);
-                    FontPeerImpl delPeer = (FontPeerImpl)hmr.get();
-                    
-                    if ((delPeer != null) && (delPeer.getClass() != CompositeFont.class)){
-                        // there's nothing to dispose in CompositeFont objects
-                        delPeer.dispose();
-                    }
-                }
-            } catch (Throwable t){
-                throw new RuntimeException(t);
-            }
-        }
-      }
+//    private class DisposeNativeHook extends Thread {
+//
+//        @Override
+//        public void run() {
+//            try{
+//                /* Disposing native font peer's resources */
+//                Enumeration<String> kEnum = fontsTable.keys();
+//
+//                while(kEnum.hasMoreElements()){
+//                    Object key = kEnum.nextElement();
+//                    HashMapReference hmr = fontsTable.remove(key);
+//                    FontPeerImpl delPeer = (FontPeerImpl)hmr.get();
+//                    
+//                    if ((delPeer != null) && (delPeer.getClass() != CompositeFont.class)){
+//                        // there's nothing to dispose in CompositeFont objects
+//                        delPeer.dispose();
+//                    }
+//                }
+//            } catch (Throwable t){
+//                throw new RuntimeException(t);
+//            }
+//        }
+//      }
 
     /**
      * Returns File object, created in a directory

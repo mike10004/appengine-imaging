@@ -30,14 +30,14 @@ final class HeadlessEventDispatchThread extends EventDispatchThread  {
     /**
      * Initialise and run the main event loop
      */
-    @Override
-    public void run() {
-        try {
-            runModalLoop(null);
-        } finally {
-            toolkit.shutdownWatchdog.forceShutdown();
-        }
-    }
+//    @Override
+//    public void run() {
+//        try {
+//            runModalLoop(null);
+//        } finally {
+//            toolkit.shutdownWatchdog.forceShutdown();
+//        }
+//    }
     
     @Override
     void runModalLoop(ModalContext context) {

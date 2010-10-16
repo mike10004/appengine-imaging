@@ -590,14 +590,14 @@ public abstract class Toolkit {
                 public WTK init() {
                     wtk = createWTK(className);
                     wtk.getNativeEventQueue().setShutdownWatchdog(shutdownWatchdog);
-                    synchronizer.setEnvironment(wtk, dispatchThread);
+//                    synchronizer.setEnvironment(wtk, dispatchThread);
                     ContextStorage.setWTK(wtk);
                     dtk.initDragAndDrop();
                     return wtk;
                 }
             };
             nativeThread.start(init);
-            dispatchThread.start();
+//            dispatchThread.start();
             wtk.getNativeEventQueue().awake();
         } finally {
             unlockAWT();
@@ -1460,7 +1460,8 @@ public abstract class Toolkit {
         }
 
         private boolean isDispatchThread() {
-            return Thread.currentThread() instanceof EventDispatchThread;
+        	return true;
+//            return Thread.currentThread() instanceof EventDispatchThread;
         }
     }
 }

@@ -4068,11 +4068,11 @@ public abstract class Component implements ImageObserver, MenuContainer, Seriali
                 }
             }
         };
-        if (Thread.currentThread() instanceof EventDispatchThread) {
+//        if (Thread.currentThread() instanceof EventDispatchThread) {
             r.run();
-        } else {
-            toolkit.getSystemEventQueueImpl().postEvent(new InvocationEvent(this, r));
-        }
+//        } else {
+//            toolkit.getSystemEventQueueImpl().postEvent(new InvocationEvent(this, r));
+//        }
     }
 
     /**
