@@ -5,12 +5,12 @@ xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet>
-		<servlet-name>ImagingTesting</servlet-name>
-		<servlet-class>com.gaecompat.testing.ImagingTestingServlet</servlet-class>
+		<servlet-name>ImagingDemo</servlet-name>
+		<servlet-class>com.gaecompat.demo.ImagingDemoServlet</servlet-class>
 		
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>ImagingTesting</servlet-name>
+		<servlet-name>ImagingDemo</servlet-name>
 		<url-pattern>/image</url-pattern>
 	</servlet-mapping>
 </web-app>
