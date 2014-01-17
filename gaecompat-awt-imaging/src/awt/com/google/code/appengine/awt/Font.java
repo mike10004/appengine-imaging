@@ -39,6 +39,7 @@ import org.apache.harmony.awt.gl.font.fontlib.FLFontManager;
 import org.apache.harmony.awt.internal.nls.Messages;
 import org.apache.harmony.misc.HashCode;
 
+import com.gaecompat.imaging.font.GaeCompatFontManager;
 import com.google.code.appengine.awt.Font;
 import com.google.code.appengine.awt.FontFormatException;
 import com.google.code.appengine.awt.Toolkit;
@@ -979,47 +980,47 @@ public class Font implements Serializable {
     
     public static Font createFont(int fontFormat, InputStream fontStream)
             throws FontFormatException, IOException {
-    	throw new IOException("not supported in Google App Engine");
-//        BufferedInputStream buffStream;
-//        int bRead = 0;
-//        int size = 8192;  // memory page size, for the faster reading
-//        byte buf[] = new byte[size];
-//
-//        if (fontFormat != TRUETYPE_FONT && !FontManager.IS_FONTLIB) {
-//            // awt.9A=Unsupported font format
-//            throw new IllegalArgumentException ( Messages.getString("awt.9A") ); //$NON-NLS-1$
-//        }
-//
-//        /* Get font file in system-specific directory */
+        BufferedInputStream buffStream;
+        int bRead = 0;
+        int size = 8192;  // memory page size, for the faster reading
+        byte buf[] = new byte[size];
+
+        if (fontFormat != TRUETYPE_FONT && !FontManager.IS_FONTLIB) {
+            // awt.9A=Unsupported font format
+            throw new IllegalArgumentException ( Messages.getString("awt.9A") ); //$NON-NLS-1$
+        }
+
+        /* Get font file in system-specific directory */
 //        File fontFile = FontManager.getInstance().getTempFontFile();
-////        File fontFile = Toolkit.getDefaultToolkit().getGraphicsFactory().getFontManager().getTempFontFile();
-//
-//
-//        buffStream = new BufferedInputStream ( fontStream );
-//        ByteArrayOutputStream fOutStream = new ByteArrayOutputStream ();
-//
-//        bRead = buffStream.read ( buf, 0, size );
-//
-//        while ( bRead != -1 ) {
-//            fOutStream.write ( buf, 0, bRead );
-//            bRead = buffStream.read ( buf, 0, size );
-//        }
-//
-//        buffStream.close();
-//        fOutStream.close();
-//
-//        Font font = null;
-//        
-//        if (FontManager.IS_FONTLIB) {
-//            font = ((FLFontManager)FontManager.getInstance()).embedFont(fontFile.getAbsolutePath(), fontFormat);
-//        } else {
-//            font = Toolkit.getDefaultToolkit().getGraphicsFactory().embedFont(fontFile.getAbsolutePath());
-//        }
-//        if ( font == null ) {
-//            // awt.9B=Can't create font - bad font data
-//            throw new FontFormatException ( Messages.getString("awt.9B") ); //$NON-NLS-1$
-//        }
-//        return font;
+//        File fontFile = Toolkit.getDefaultToolkit().getGraphicsFactory().getFontManager().getTempFontFile();
+
+
+        buffStream = new BufferedInputStream ( fontStream );
+        ByteArrayOutputStream fOutStream = new ByteArrayOutputStream ();
+
+        bRead = buffStream.read ( buf, 0, size );
+
+        while ( bRead != -1 ) {
+            fOutStream.write ( buf, 0, bRead );
+            bRead = buffStream.read ( buf, 0, size );
+        }
+
+        buffStream.close();
+        fOutStream.close();
+
+        Font font = null;
+        
+        if (FontManager.IS_FONTLIB) {
+        	GaeCompatFontManager fm = (GaeCompatFontManager)FontManager.getInstance();
+            font = fm.embedFont(fOutStream.toByteArray(), fontFormat);
+        } else {
+            font = Toolkit.getDefaultToolkit().getGraphicsFactory().embedFont(fOutStream.toByteArray());
+        }
+        if ( font == null ) {
+            // awt.9B=Can't create font - bad font data
+            throw new FontFormatException ( Messages.getString("awt.9B") ); //$NON-NLS-1$
+        }
+        return font;
     }
 
 }

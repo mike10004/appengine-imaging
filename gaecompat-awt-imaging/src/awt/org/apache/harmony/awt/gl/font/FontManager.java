@@ -36,6 +36,7 @@ import org.apache.harmony.awt.gl.CommonGraphics2DFactory;
 import org.apache.harmony.awt.gl.font.fontlib.FLFontManager;
 import org.apache.harmony.awt.Utils;
 
+import com.gaecompat.imaging.font.GaeCompatFontManager;
 import com.google.code.appengine.awt.Font;
 import com.google.code.appengine.awt.GraphicsEnvironment;
 import com.google.code.appengine.awt.peer.FontPeer;
@@ -248,10 +249,10 @@ public abstract class FontManager {
     /**
      * Singleton instance
      */
-    private static FontManager inst = 
-        IS_FONTLIB ? 
-            new FLFontManager() : 
-                CommonGraphics2DFactory.inst.getFontManager();
+//    private static final FontManager inst = ; 
+//        IS_FONTLIB ? 
+//            new FLFontManager() : 
+//                CommonGraphics2DFactory.inst.getFontManager();
 
 
     /**
@@ -260,7 +261,7 @@ public abstract class FontManager {
      * @return instance of FontManager implementation
      */
     public static FontManager getInstance() {
-        return inst;
+        return GaeCompatFontManager.getInstance();
     }
 
     /**

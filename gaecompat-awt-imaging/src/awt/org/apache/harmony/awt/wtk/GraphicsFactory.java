@@ -73,5 +73,6 @@ public interface GraphicsFactory {
     // Font methods
     FontManager getFontManager();
     FontPeer getFontPeer(Font font);
-    Font embedFont(String fontFilePath) throws IOException;
+    //Font embedFont(String fontFilePath) throws IOException;
+    Font embedFont(byte[] fontBytes) throws IOException;
 }

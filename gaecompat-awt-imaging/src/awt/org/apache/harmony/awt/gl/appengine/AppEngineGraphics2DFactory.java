@@ -8,6 +8,7 @@ import org.apache.harmony.awt.gl.font.FontManager;
 import org.apache.harmony.awt.wtk.NativeWindow;
 import org.apache.harmony.awt.wtk.WindowFactory;
 
+import com.gaecompat.imaging.font.GaeCompatFontManager;
 import com.google.code.appengine.awt.Font;
 import com.google.code.appengine.awt.Graphics2D;
 import com.google.code.appengine.awt.GraphicsEnvironment;
@@ -25,15 +26,22 @@ public class AppEngineGraphics2DFactory extends CommonGraphics2DFactory
 		return new AppEngineGraphicsEnvironment();
 	}
 
+//	@Override
+//	public Font embedFont(String fontFilePath) throws IOException
+//	{
+//		return null;
+//	}
+
 	@Override
-	public Font embedFont(String fontFilePath) throws IOException
+	public Font embedFont(byte[] fontBytes) throws IOException
 	{
 		return null;
 	}
 
 	public FontManager getFontManager()
 	{
-		return AppEngineFontManager.inst;
+//		return AppEngineFontManager.inst;
+		return GaeCompatFontManager.getInstance();
 	}
 
 	public Graphics2D getGraphics2D(NativeWindow win, int translateX,

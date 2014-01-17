@@ -67,11 +67,13 @@ public abstract class GraphicsEnvironment {
     }
 
     public static boolean isHeadless() {
-        if (isHeadless == null) {
-            isHeadless = Boolean.valueOf(org.apache.harmony.awt.Utils.getSystemProperty("java.awt.headless")); //$NON-NLS-1$ 
-        }
-
-        return isHeadless.booleanValue();
+    	return true;
+//        if (isHeadless == null) {
+//        	String value = org.apache.harmony.awt.Utils.getSystemProperty("java.awt.headless"); //$NON-NLS-1$;
+//            isHeadless =  Boolean.valueOf(value);
+//        }
+//
+//        return isHeadless.booleanValue();
     }
 
     public Rectangle getMaximumWindowBounds() throws HeadlessException {

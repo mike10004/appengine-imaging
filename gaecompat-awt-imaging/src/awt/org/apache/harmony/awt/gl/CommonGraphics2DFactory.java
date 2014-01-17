@@ -47,6 +47,6 @@ public abstract class CommonGraphics2DFactory implements GraphicsFactory {
      * @param fontFilePath path to the font file 
      * @return Font object that was created from the file.
      */
-    public abstract Font embedFont(String fontFilePath) throws IOException;
+//    public abstract Font embedFont(String fontFilePath) throws IOException;
 
 }
