@@ -142,6 +142,9 @@ import java.util.Vector;
  * @author Marco Schmidt
  */
 public class ImageInfo {
+	
+	public static enum Format {
+	
 	/**
 	 * Return value of {@link #getFormat()} for JPEG streams.
 	 * ImageInfo can extract physical resolution and comments
@@ -150,7 +153,7 @@ public class ImageInfo {
 	 * It is determined whether the JPEG stream is progressive 
 	 * (see {@link #isProgressive()}).
 	 */
-	public static final int FORMAT_JPEG = 0;
+	JPEG,
 
 	/**
 	 * Return value of {@link #getFormat()} for GIF streams.
@@ -158,7 +161,7 @@ public class ImageInfo {
 	 * of images (GIFs with more than one image are animations).
 	 * It is determined whether the GIF stream is interlaced (see {@link #isProgressive()}).
 	 */
-	public static final int FORMAT_GIF = 1;
+	GIF,
 
 	/**
 	 * Return value of {@link #getFormat()} for PNG streams.
@@ -167,7 +170,7 @@ public class ImageInfo {
 	 * but ImageInfo is currently not able to extract those.
 	 * It is determined whether the PNG stream is interlaced (see {@link #isProgressive()}).
 	 */
-	public static final int FORMAT_PNG = 2;
+	PNG,
 
 	/**
 	 * Return value of {@link #getFormat()} for BMP streams.
@@ -175,44 +178,70 @@ public class ImageInfo {
 	 * BMP does not allow for comments.
 	 * The physical resolution can be stored.
 	 */
-	public static final int FORMAT_BMP = 3;
+	BMP,
 
 	/**
 	 * Return value of {@link #getFormat()} for PCX streams.
 	 * PCX does not allow for comments or more than one image per file.
 	 * However, the physical resolution can be stored.
 	 */
-	public static final int FORMAT_PCX = 4;
+	PCX,
 
 	/**
 	 * Return value of {@link #getFormat()} for IFF streams.
 	 */
-	public static final int FORMAT_IFF = 5;
+	IFF,
 
 	/**
 	 * Return value of {@link #getFormat()} for RAS streams.
 	 * Sun Raster allows for one image per file only and is not able to
 	 * store physical resolution or comments.
 	 */
-	public static final int FORMAT_RAS = 6;
+	RAS,
 
 	/** Return value of {@link #getFormat()} for PBM streams. */
-	public static final int FORMAT_PBM = 7;
+	PBM,
 
 	/** Return value of {@link #getFormat()} for PGM streams. */
-	public static final int FORMAT_PGM = 8;
+	PGM,
 
 	/** Return value of {@link #getFormat()} for PPM streams. */
-	public static final int FORMAT_PPM = 9;
+	PPM,
 
 	/** Return value of {@link #getFormat()} for PSD streams. */
-	public static final int FORMAT_PSD = 10;
-
-/*	public static final int COLOR_TYPE_UNKNOWN = -1;
-	public static final int COLOR_TYPE_TRUECOLOR_RGB = 0;
-	public static final int COLOR_TYPE_PALETTED = 1;
-	public static final int COLOR_TYPE_GRAYSCALE= 2;
-	public static final int COLOR_TYPE_BLACK_AND_WHITE = 3;*/
+	PSD,
+	
+	WEBP,
+	
+	TIFF,
+	
+	ICO
+	;
+	
+	public String[] getCommonExtensions() {
+		switch (this) {
+		case JPEG:
+			return new String[] {"jpg", "jpeg"};
+		case TIFF:
+			return new String[] {"tiff", "tif"};
+		default:
+			return new String[] {getName().toLowerCase()};
+		}
+	}
+	
+	public String getPreferredExtension() {
+		return getCommonExtensions()[0];
+	}
+	
+	/**
+	 * The names of the MIME types for all supported file formats.
+	 * The FORMAT_xyz int constants can be used as index values for
+	 * this array.
+	 */
+	private static final String[] MIME_TYPE_STRINGS =
+		{"image/jpeg", "image/gif", "image/png", "image/bmp", "image/pcx", 
+		 "image/iff", "image/ras", "image/x-portable-bitmap", "image/x-portable-graymap", "image/x-portable-pixmap", 
+		 "image/psd", "image/webp", "image/tiff", "image/vnd.microsoft.icon"};
 
 	/**
 	 * The names of all supported file formats.
@@ -222,24 +251,30 @@ public class ImageInfo {
 	private static final String[] FORMAT_NAMES =
 		{"JPEG", "GIF", "PNG", "BMP", "PCX", 
 		 "IFF", "RAS", "PBM", "PGM", "PPM", 
-		 "PSD"};
+		 "PSD", "WEBP", "TIFF", "ICO"};
 
-	/**
-	 * The names of the MIME types for all supported file formats.
-	 * The FORMAT_xyz int constants can be used as index values for
-	 * this array.
-	 */
-	private static final String[] MIME_TYPE_STRINGS =
-		{"image/jpeg", "image/gif", "image/png", "image/bmp", "image/pcx", 
-		 "image/iff", "image/ras", "image/x-portable-bitmap", "image/x-portable-graymap", "image/x-portable-pixmap", 
-		 "image/psd"};
+		public String getName() {
+			return FORMAT_NAMES[ordinal()];
+		}
+		
+		public String getMimeType() {
+			return MIME_TYPE_STRINGS[ordinal()];
+		}
+	}
+
+/*	public static final int COLOR_TYPE_UNKNOWN = -1;
+	public static final int COLOR_TYPE_TRUECOLOR_RGB = 0;
+	public static final int COLOR_TYPE_PALETTED = 1;
+	public static final int COLOR_TYPE_GRAYSCALE= 2;
+	public static final int COLOR_TYPE_BLACK_AND_WHITE = 3;*/
+
 
 	private int width;
 	private int height;
 	private int bitsPerPixel;
 	//private int colorType = COLOR_TYPE_UNKNOWN;
 	private boolean progressive;
-	private int format;
+	private Format format;
 	private InputStream in;
 	private DataInput din;
 	private boolean collectComments = true;
@@ -266,7 +301,7 @@ public class ImageInfo {
 	 * @return if information could be retrieved from input
 	 */
 	public boolean check() {
-		format = -1;
+		format = null;
 		width = -1;
 		height = -1;
 		bitsPerPixel = -1;
@@ -344,7 +379,7 @@ public class ImageInfo {
 		if (y > 0) {
 			setPhysicalHeightDpi(y);
 		}
-		format = FORMAT_BMP;
+		format = Format.BMP;
 		return true;
 	}
 
@@ -359,7 +394,7 @@ public class ImageInfo {
 			(!equals(a, 0, GIF_MAGIC_87A, 0, 4))) {
 			return false;
 		}
-		format = FORMAT_GIF;
+		format = Format.GIF;
 		width = getShortLittleEndian(a, 4);
 		height = getShortLittleEndian(a, 6);
 		int flags = a[8] & 0xff;
@@ -498,7 +533,7 @@ public class ImageInfo {
 				if (read(a, 0, 9) != 9) {
 					return false;
 				}
-				format = FORMAT_IFF;
+				format = Format.IFF;
 				width = getShortBigEndian(a, 0);
 				height = getShortBigEndian(a, 2);
 				bitsPerPixel = a[8] & 0xff;
@@ -560,7 +595,7 @@ public class ImageInfo {
 				if (read(data, 0, 6) != 6) {
 					return false;
 				}
-				format = FORMAT_JPEG;
+				format = Format.JPEG;
 				bitsPerPixel = (data[0] & 0xff) * (data[5] & 0xff);
 				progressive = marker == 0xffc2 || marker == 0xffc6 ||
 					marker == 0xffca || marker == 0xffce;
@@ -607,7 +642,7 @@ public class ImageInfo {
 		}
 		setPhysicalWidthDpi(getShortLittleEndian(a, 10));
 		setPhysicalHeightDpi(getShortLittleEndian(a, 10));
-		format = FORMAT_PCX;
+		format = Format.PCX;
 		return true;
 	}
 
@@ -620,7 +655,7 @@ public class ImageInfo {
 		if (!equals(a, 0, PNG_MAGIC, 0, 6)) {
 			return false;
 		}
-		format = FORMAT_PNG;
+		format = Format.PNG;
 		width = getIntBigEndian(a, 14);
 		height = getIntBigEndian(a, 18);
 		bitsPerPixel = a[22] & 0xff;
@@ -636,7 +671,7 @@ public class ImageInfo {
 		if (id < 1 || id > 6) {
 			return false;
 		}
-		final int[] PNM_FORMATS = {FORMAT_PBM, FORMAT_PGM, FORMAT_PPM};
+		final Format[] PNM_FORMATS = {Format.PBM, Format.PGM, Format.PPM};
 		format = PNM_FORMATS[(id - 1) % 3];
 		boolean hasPixelResolution = false;
 		String s;
@@ -675,7 +710,7 @@ public class ImageInfo {
 				if (width < 1 || height < 1) {
 					return false;
 				}
-				if (format == FORMAT_PBM) {
+				if (format == Format.PBM) {
 					bitsPerPixel = 1;
 					return true;
 				}
@@ -695,7 +730,7 @@ public class ImageInfo {
 				for (int i = 0; i < 25; i++) {
 					if (maxSample < (1 << (i + 1))) {
 						bitsPerPixel = i + 1;
-						if (format == FORMAT_PPM) {
+						if (format == Format.PPM) {
 							bitsPerPixel *= 3;
 						}
 						return true;
@@ -715,7 +750,7 @@ public class ImageInfo {
 		if (!equals(a, 0, PSD_MAGIC, 0, 2)) {
 			return false;
 		}
-		format = FORMAT_PSD;
+		format = Format.PSD;
 		width = getIntBigEndian(a, 16);
 		height = getIntBigEndian(a, 12);
 		int channels = getShortBigEndian(a, 10);
@@ -733,7 +768,7 @@ public class ImageInfo {
 		if (!equals(a, 0, RAS_MAGIC, 0, 2)) {
 			return false;
 		}
-		format = FORMAT_RAS;
+		format = Format.RAS;
 		width = getIntBigEndian(a, 2);
 		height = getIntBigEndian(a, 6);
 		bitsPerPixel = getIntBigEndian(a, 10);
@@ -794,7 +829,7 @@ public class ImageInfo {
 	 * Use {@link #getFormatName()} to get a textual description of the file format.
 	 * @return file format as a FORMAT_xyz constant
 	 */
-	public int getFormat() {
+	public Format getFormat() {
 		return format;
 	}
 
@@ -804,8 +839,8 @@ public class ImageInfo {
 	 * @return file format name
 	 */
 	public String getFormatName() {
-		if (format >= 0 && format < FORMAT_NAMES.length) {
-			return FORMAT_NAMES[format];
+		if (format != null) {
+			return format.getName();
 		} else {
 			return "?";
 		}
@@ -842,12 +877,12 @@ public class ImageInfo {
 	 * @return MIME type, e.g. <code>image/jpeg</code>
 	 */
 	public String getMimeType() {
-		if (format >= 0 && format < MIME_TYPE_STRINGS.length) {
-			if (format == FORMAT_JPEG && progressive)
+		if (format != null) {
+			if (format == Format.JPEG && progressive)
 			{
 				return "image/pjpeg";
 			}
-			return MIME_TYPE_STRINGS[format];
+			return format.getMimeType();
 		} else {
 			return null;
 		}
