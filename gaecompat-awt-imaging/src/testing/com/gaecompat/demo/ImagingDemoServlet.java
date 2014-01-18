@@ -65,7 +65,7 @@ public class ImagingDemoServlet extends HttpServlet {
 		byte[] inputBytes = Resources.toByteArray(nextURL());
 		ServiceImageIO io = new ServiceImageIO(getImagesService());
 		BufferedImage image = io.read(inputBytes);
-		image = EasyFilter.Examples.random().filter(image);
+		image = SimpleFilter.Examples.random().filter(image);
 		byte[] outputBytes = io.write(image, org.devlib.schmidt.imageinfo.ImageInfo.Format.PNG);
 		return outputBytes;
 	}

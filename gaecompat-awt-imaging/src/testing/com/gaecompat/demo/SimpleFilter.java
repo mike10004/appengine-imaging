@@ -12,11 +12,11 @@ import com.google.code.appengine.awt.image.ConvolveOp;
 import com.google.code.appengine.awt.image.Kernel;
 import com.google.code.appengine.awt.image.WritableRaster;
 
-public interface EasyFilter {
+public interface SimpleFilter {
 
 	BufferedImage filter(BufferedImage inputImage) throws IOException;
 
-	public static abstract class InPlaceRasterFilter implements EasyFilter {
+	public static abstract class InPlaceRasterFilter implements SimpleFilter {
 
 		@Override
 		public BufferedImage filter(BufferedImage inputImage)
@@ -45,7 +45,7 @@ public interface EasyFilter {
 		protected abstract void mutate(WritableRaster raster, int x, int y);
 	}
 	
-	public static class ConvolvingFilter implements EasyFilter {
+	public static class ConvolvingFilter implements SimpleFilter {
 
 		private ConvolveOp convolveOp;
 		
@@ -175,7 +175,7 @@ public interface EasyFilter {
 		}
 	}
 	
-	public static class GrayFilter implements EasyFilter {
+	public static class GrayFilter implements SimpleFilter {
 
 				@Override
 		public BufferedImage filter(BufferedImage image)
@@ -194,7 +194,7 @@ public interface EasyFilter {
 		
 	}
 	
-	public static class IdentityFilter implements EasyFilter {
+	public static class IdentityFilter implements SimpleFilter {
 
 		@Override
 		public BufferedImage filter(BufferedImage inputImage)
@@ -233,19 +233,19 @@ public interface EasyFilter {
 		private static final Random random = new Random();
 		private Examples() {}
 		
-		public static ImmutableList<EasyFilter> allFilters() {
+		public static ImmutableList<SimpleFilter> allFilters() {
 			return filters;
 		}
 		
-		public static EasyFilter random() {
+		public static SimpleFilter random() {
 			return filters.get(random.nextInt(filters.size()));
 		}
 		
-		private static ImmutableList<EasyFilter> filters = createFilters();
+		private static ImmutableList<SimpleFilter> filters = createFilters();
 		
-		private static ImmutableList<EasyFilter> createFilters() {
+		private static ImmutableList<SimpleFilter> createFilters() {
 			ChannelFilter red = newRedFilter(), green =newGreenFilter(), blue = newBlueFilter();
-			List<EasyFilter> filters = Lists.<EasyFilter>newArrayList();
+			List<SimpleFilter> filters = Lists.<SimpleFilter>newArrayList();
 			filters.add(new IdentityFilter());
 			filters.add(new ConvolvingFilter(Convolutions.edgeDetect()));
 			filters.add(red);
